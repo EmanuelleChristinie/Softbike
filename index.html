@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontes babilonicas usadas  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>SOFTBYKE</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="SOFTBYKE Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div class="list">
+            <!-- Bike 1 -->
+            <div class="item active">
+                <div class="bike-img">
+                    <img src="img/1.png" alt="ElectroBike Kross">
+                </div>
+                <div class="content">
+                    <p class="bike-information">Único Dono</p>
+                    <h2>ElectroBike Kross</h2>
+                    <p class="description">
+                        A ElectroBike Kross é uma bicicleta de alta performance urbana e off-road, projetada para velocidade máxima e máxima eficiência em deslocamentos mistos. Sua estrutura conta com um quadro leve de engenharia avançada com bateria totalmente integrada, otimizando a aerodinâmica e o centro de gravidade.
+                    </p>
+                    <button class="information">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Bike 2 -->
+            <div class="item">
+                <div class="bike-img">
+                    <img src="img/2.png" alt="Bintee Mountain Bike">
+                </div>
+                <div class="content">
+                    <p class="bike-information">Lançamento 2026</p>
+                    <h2>Bintee Mountain Bike</h2>
+                    <p class="description">
+                        Máquina de alta performance projetada para cross-country e velocidade máxima em terrenos irregulares.
+                    </p>
+                    <button class="information">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Bike 3 -->
+            <div class="item">
+                <div class="bike-img">
+                    <img src="img/3.png" alt="Mongoose Switchback">
+                </div>
+                <div class="content">
+                    <p class="bike-information">Semi-Nova</p>
+                    <h2>Mongoose Switchback</h2>
+                    <p class="description">
+                        A Mongoose Switchback é uma máquina de cross-country projetada para velocidade constante e máxima agilidade em trilhas e estradas de terra batida.
+                    </p>
+                    <button class="information">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Bike 4 -->
+            <div class="item">
+                <div class="bike-img">
+                    <img src="img/4.png" alt="Avanti Galant Mountain Bike">
+                </div>
+                <div class="content">
+                    <p class="bike-information">Edição Limitada</p>
+                    <h2>Avanti Galant Mountain Bike</h2>
+                    <p class="description">
+                        Com um quadro de liga leve com geometria de competição, ela oferece excelente rigidez torcional para respostas imediatas a cada aceleração, garantindo total eficiência nas subidas e retomadas.
+                    </p>
+                    <button class="information">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Bike 5 -->
+            <div class="item">
+                <div class="bike-img">
+                    <img src="img/5.png" alt="Santa Cruz Nomad Carbon">
+                </div>
+                <div class="content">
+                    <p class="bike-information">Alta Performance</p>
+                    <h2>Santa Cruz Nomad Carbon</h2>
+                    <p class="description">
+                        Com fibra de carbono, projetada para velocidade extrema em descidas técnicas e máxima eficiência nos terrenos de enduro mais agressivos do planeta.
+                    </p>
+                    <button class="information">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Bike 6 -->
+            <div class="item">
+                <div class="bike-img">
+                    <img src="img/6.png" alt="Solomo Aggressive XT">
+                </div>
+                <div class="content">
+                    <p class="bike-information">Exclusiva</p>
+                    <h2>Solomo Aggressive XT</h2>
+                    <p class="description">
+                        Construída sobre um quadro de liga leve com geometria esportiva, ela oferece excelente rigidez estrutural para garantir acelerações rápidas e ótima transferência de energia nas subidas.
+                    </p>
+                    <button class="information">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linha com Setas usando arrow.svg -->
+        <div class="arrows">
+            <button id="prev"><img src="img/arrow.svg" alt="Anterior"></button>
+            <div class="line"></div>
+            <button id="next"><img src="img/arrow.svg" alt="Próximo"></button>
+        </div>
+
+        <!-- Indica a "posição" de cada bike e barrinhas -->
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="sponsors-container">
+    <span class="sponsors-title">PATROCINADORES OFICIAIS</span>
+    <div class="sponsors-grid">
+        <div class="sponsor-card">SHIMANO</div>
+        <div class="sponsor-card">SPECIALIZED</div>
+        <div class="sponsor-card">PIRELLI</div>
+        <div class="sponsor-card">ROCKSHOX</div>
+    </div>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

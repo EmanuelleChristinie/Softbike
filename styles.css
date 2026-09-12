@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #03071e;
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header .logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #beff11;
+}
+
+.slider {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle at 50% 50%, #0d1b2a 0%, #03071e 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider .list .item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slider .list .item.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Imagem da Bike Centralizada */
+.slider .list .item .bike-img {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    width: 55%;
+    z-index: 2;
+}
+
+.slider .list .item .bike-img img {
+   width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.6));
+    transition: transform 0.8s ease-in-out;
+}
+
+.slider .list .item.active .bike-img img {
+    transform: rotate(-12deg) scale(1.03);
+}
+
+/* Textos à Direita */
+.slider .list .item .content {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 15px;
+    z-index: 2;
+}
+  
+.slider .list .item .content .bike-information {
+    font-size: 16px;
+    font-weight: 600;
+    color: #beff11;
+}
+
+.slider .list .item .content h2 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 5.5rem;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.slider .list .item .content .description {
+    color: #c0c0c0;
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 420px;
+}
+
+/* Botão Neon */
+.slider .list .item .content .information {
+    margin-top: 10px;
+    background-color: #beff11;
+    color: #000;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(190, 255, 17, 0.25);
+}
+
+.slider .list .item .content .information:hover {
+    transform: scale(1.05);
+    background-color: #a6e300;
+}
+
+/* Setas com o SVG arrow.svg */
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    right: 4%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.arrows .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0 20px;
+}
+
+.arrows button {
+    pointer-events: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.arrows button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Seta esquerda invertida */
+.arrows button#prev img {
+    transform: scaleX(-1);
+}
+
+.arrows button:hover {
+    background-color: #beff11;
+    transform: scale(1.1);
+}
+
+/* Indicadores na Parte Inferior */
+.indicators {
+    position: absolute;
+    bottom: 35px;
+    left: 80px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.indicators .number {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 4.5rem;
+    line-height: 1em;
+    color: #ffffff;
+}
+
+.indicators ul {
+    display: flex;
+    gap: 10px;
+}
+
+.indicators ul li {
+    width: 45px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.indicators ul li.active {
+    background-color: #beff11;
+}
+
+/* --- ESTILIZAÇÃO DA GALERIA E DOS PRODUTOS --- */
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+/* Estrutura da grade em 3 colunas */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+}
+
+/* O Card em tom de Azul Harmonioso com o Fundo */
+.product-card {
+    background: rgba(13, 27, 42, 0.75); /* Tom de azul escuro profundo */
+    border: 1px solid rgba(0, 212, 255, 0.25); /* Borda em ciano/neon */
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 212, 255, 0.7);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.15);
+}
+
+/* Área da imagem (fundo limpo com tamanho controlado) */
+.card-img-wrapper {
+    background: rgba(255, 255, 255, 0.03);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta a imagem sem esticar ou quebrar o card */
+}
+
+/* Área de texto, preço e detalhes do produto */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: #a8b2d1;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.product-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #beff11; /* Cor verde/amarelo neon para destaque do preço */
+}
