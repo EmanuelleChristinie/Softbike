@@ -14,37 +14,19 @@ html, body {
     color: #fff;
     min-height: 100vh;
     overflow-x: hidden;
-<<<<<<< HEAD
-    overflow-y: auto; /* Permite a rolagem nas páginas longas */
-}
-
-/* ==========================================================================
-   HEADER / NAVEGAÇÃO
-   ========================================================================== */
-=======
 }
 
 /* Header Fixo e Visível */
->>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-<<<<<<< HEAD
-    padding: 20px 80px;
-=======
     padding: 15px 50px;
->>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-<<<<<<< HEAD
-    background-color: rgba(3, 7, 30, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-=======
     background: rgba(3, 7, 30, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 212, 255, 0.2);
@@ -71,7 +53,6 @@ header {
 
 .menu-toggle:hover {
     color: #00d4ff;
->>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 }
 
 header .logo img {
@@ -165,36 +146,6 @@ nav.main-nav ul li a.active {
     color: #beff11;
 }
 
-<<<<<<< HEAD
-/* Container para páginas internas (Empresa, Galeria, Documentos) */
-.page-container {
-    padding-top: 130px; /* Dá espaço para o Header fixo não cobrir o título */
-    padding-bottom: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.page-title {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.page-subtitle {
-    color: #a8b2d1;
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-}
-
-/* ==========================================================================
-   PÁGINA HOME (SLIDER)
-   ========================================================================== */
-=======
 .side-drawer ul {
     display: flex;
     flex-direction: column;
@@ -230,7 +181,6 @@ nav.main-nav ul li a.active {
 }
 
 /* Home / Slider */
->>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 .slider {
     height: 100vh;
     width: 100vw;
@@ -367,14 +317,11 @@ nav.main-nav ul li a.active {
     transition: 0.3s;
 }
 
-<<<<<<< HEAD
-=======
 .arrows button img {
     width: 20px;
     height: 20px;
 }
 
->>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 .arrows button#prev img {
     transform: scaleX(-1);
 }
@@ -419,71 +366,6 @@ nav.main-nav ul li a.active {
     background-color: #beff11;
 }
 
-<<<<<<< HEAD
-/* ==========================================================================
-   PÁGINA EMPRESA (EQUIPE)
-   ========================================================================== */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.team-card {
-    background: rgba(13, 27, 42, 0.75);
-    border: 1px solid rgba(0, 212, 255, 0.25);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    backdrop-filter: blur(5px);
-    transition: transform 0.3s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-5px);
-}
-
-.member-img img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #beff11;
-    margin-bottom: 20px;
-}
-
-.team-card h3 {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.team-card .role {
-    display: block;
-    color: #beff11;
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.team-card .bio {
-    color: #a8b2d1;
-    font-size: 0.88rem;
-    line-height: 1.6;
-}
-
-/* ==========================================================================
-   PÁGINA GALERIA / PRODUTOS
-   ========================================================================== */
-.gallery-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-=======
 /* Estrutura das Páginas Internas */
 .page-container {
     padding-top: 120px;
@@ -512,7 +394,6 @@ nav.main-nav ul li a.active {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
->>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
     gap: 25px;
 }
 
