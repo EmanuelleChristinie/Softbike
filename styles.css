@@ -1,3 +1,6 @@
+/* ==========================================================================
+   RESET E ESTILOS GERAIS
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +12,27 @@
 body {
     background-color: #03071e;
     color: #fff;
-    overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto; /* Permite a rolagem nas páginas longas */
 }
 
-/* Header */
+/* ==========================================================================
+   HEADER / NAVEGAÇÃO
+   ========================================================================== */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 80px;
+    padding: 20px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
+    z-index: 100;
+    background-color: rgba(3, 7, 30, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 header .logo img {
@@ -50,6 +59,34 @@ header nav ul li a.active {
     color: #beff11;
 }
 
+/* Container para páginas internas (Empresa, Galeria, Documentos) */
+.page-container {
+    padding-top: 130px; /* Dá espaço para o Header fixo não cobrir o título */
+    padding-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page-title {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: #a8b2d1;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   PÁGINA HOME (SLIDER)
+   ========================================================================== */
 .slider {
     height: 100vh;
     width: 100vw;
@@ -77,7 +114,6 @@ header nav ul li a.active {
     pointer-events: auto;
 }
 
-/* Imagem da Bike Centralizada */
 .slider .list .item .bike-img {
     position: absolute;
     top: 50%;
@@ -88,7 +124,7 @@ header nav ul li a.active {
 }
 
 .slider .list .item .bike-img img {
-   width: 100%;
+    width: 100%;
     max-height: 60vh;
     object-fit: contain;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.6));
@@ -99,7 +135,6 @@ header nav ul li a.active {
     transform: rotate(-12deg) scale(1.03);
 }
 
-/* Textos à Direita */
 .slider .list .item .content {
     position: absolute;
     right: 8%;
@@ -113,7 +148,7 @@ header nav ul li a.active {
     gap: 15px;
     z-index: 2;
 }
-  
+
 .slider .list .item .content .bike-information {
     font-size: 16px;
     font-weight: 600;
@@ -136,7 +171,6 @@ header nav ul li a.active {
     max-width: 420px;
 }
 
-/* Botão Neon */
 .slider .list .item .content .information {
     margin-top: 10px;
     background-color: #beff11;
@@ -158,7 +192,6 @@ header nav ul li a.active {
     background-color: #a6e300;
 }
 
-/* Setas com o SVG arrow.svg */
 .arrows {
     position: absolute;
     top: 50%;
@@ -170,13 +203,6 @@ header nav ul li a.active {
     align-items: center;
     z-index: 4;
     pointer-events: none;
-}
-
-.arrows .line {
-    flex-grow: 1;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.15);
-    margin: 0 20px;
 }
 
 .arrows button {
@@ -193,12 +219,6 @@ header nav ul li a.active {
     transition: 0.3s;
 }
 
-.arrows button img {
-    width: 20px;
-    height: 20px;
-}
-
-/* Seta esquerda invertida */
 .arrows button#prev img {
     transform: scaleX(-1);
 }
@@ -208,7 +228,6 @@ header nav ul li a.active {
     transform: scale(1.1);
 }
 
-/* Indicadores na Parte Inferior */
 .indicators {
     position: absolute;
     bottom: 35px;
@@ -244,28 +263,75 @@ header nav ul li a.active {
     background-color: #beff11;
 }
 
-/* --- ESTILIZAÇÃO DA GALERIA E DOS PRODUTOS --- */
+/* ==========================================================================
+   PÁGINA EMPRESA (EQUIPE)
+   ========================================================================== */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
 
+.team-card {
+    background: rgba(13, 27, 42, 0.75);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-img img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #beff11;
+    margin-bottom: 20px;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.team-card .role {
+    display: block;
+    color: #beff11;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.team-card .bio {
+    color: #a8b2d1;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   PÁGINA GALERIA / PRODUTOS
+   ========================================================================== */
 .gallery-header {
     text-align: center;
     margin-bottom: 40px;
-    padding-top: 20px;
 }
 
-/* Estrutura da grade em 3 colunas */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 60px 20px;
 }
 
-/* O Card em tom de Azul Harmonioso com o Fundo */
 .product-card {
-    background: rgba(13, 27, 42, 0.75); /* Tom de azul escuro profundo */
-    border: 1px solid rgba(0, 212, 255, 0.25); /* Borda em ciano/neon */
+    background: rgba(13, 27, 42, 0.75);
+    border: 1px solid rgba(0, 212, 255, 0.25);
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -280,7 +346,6 @@ header nav ul li a.active {
     box-shadow: 0 10px 25px rgba(0, 212, 255, 0.15);
 }
 
-/* Área da imagem (fundo limpo com tamanho controlado) */
 .card-img-wrapper {
     background: rgba(255, 255, 255, 0.03);
     height: 200px;
@@ -294,10 +359,9 @@ header nav ul li a.active {
 .card-img-wrapper img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Ajusta a imagem sem esticar ou quebrar o card */
+    object-fit: contain;
 }
 
-/* Área de texto, preço e detalhes do produto */
 .card-content {
     padding: 20px;
     display: flex;
@@ -306,7 +370,6 @@ header nav ul li a.active {
 }
 
 .product-title {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     color: #ffffff;
@@ -330,8 +393,22 @@ header nav ul li a.active {
 }
 
 .product-price {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #beff11; /* Cor verde/amarelo neon para destaque do preço */
+    color: #beff11;
+}
+
+/* Responsive UI Breakpoints */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+    
+    header nav ul {
+        gap: 20px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
 }
