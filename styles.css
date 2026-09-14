@@ -56,8 +56,8 @@ header {
 }
 
 header .logo img {
-    height: 42px;
-    width: auto;
+    height: 45px; 
+    width: auto;  
     object-fit: contain;
 }
 
@@ -393,7 +393,7 @@ nav.main-nav ul li a.active {
 /* Grid Geral de Cards */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 25px;
 }
 
@@ -415,13 +415,13 @@ nav.main-nav ul li a.active {
 }
 
 .card-img-wrapper {
-    background: rgba(255, 255, 255, 0.03);
-    height: 200px;
+    background: #ffffff;
+    height: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card-img-wrapper img {
@@ -539,28 +539,427 @@ nav.main-nav ul li a.active {
     line-height: 1.5;
 }
 
-/* Documentos */
+/* ==========================================================================
+   PATROCINADORES (VISIBILIDADE E TAMANHO AJUSTADOS)
+   ========================================================================== */
 .sponsors-grid-docs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .sponsor-doc-card {
-    background: rgba(13, 27, 42, 0.75);
-    border: 1px solid rgba(0, 212, 255, 0.25);
+    background: #ffffff;
+    border: 1px solid rgba(0, 212, 255, 0.4);
     border-radius: 12px;
-    padding: 25px;
+    padding: 20px 15px;
+    height: 110px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-doc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+    border-color: #00d4ff;
 }
 
 .sponsor-doc-card img {
-    max-width: 130px;
-    max-height: 60px;
+    max-width: 160px;
+    max-height: 75px;
+    width: auto;
+    height: auto;
     object-fit: contain;
-    margin-bottom: 12px;
+}
+
+/* ==========================================================================
+   GALERIA E INSPIRAÇÃO
+   ========================================================================== */
+.gallery-section {
+    margin-bottom: 60px;
+}
+
+/* Banner Hero Retangular */
+.hero-banner-wrapper {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: #07111e;
+}
+
+.hero-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(3, 7, 30, 0.2) 0%, rgba(3, 7, 30, 0.85) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.hero-banner-overlay h2 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3rem;
+    color: #beff11;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Grid Seção 1 */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.gallery-card {
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: #07111e;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Seção 2: Nossos Clientes */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.client-card {
+    background: rgba(13, 27, 42, 0.75);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+}
+
+.client-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #07111e;
+}
+
+.client-info {
+    padding: 15px;
+}
+
+.client-info h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.client-info p {
+    color: #beff11;
+    font-size: 0.85rem;
+}
+
+/* Seção 3: Carrossel */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: calc(33.333% - 10px);
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    background: #07111e;
+    flex-shrink: 0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    background: rgba(13, 27, 42, 0.9);
+    border: 1px solid #00d4ff;
+    color: #beff11;
+    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s;
+    line-height: 1;
+}
+
+.carousel-btn:hover {
+    background: #00d4ff;
+    color: #03071e;
+    transform: scale(1.1);
+}
+
+.prev-btn { margin-right: 15px; }
+.next-btn { margin-left: 15px; }
+
+/* Texto de Benefícios */
+.cycling-benefits-box {
+    background: rgba(13, 27, 42, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-left: 4px solid #beff11;
+    border-radius: 12px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.cycling-benefits-box h3 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.cycling-benefits-box p {
+    color: #a8b2d1;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.cycling-benefits-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   DOCUMENTOS & RODAPÉ
+   ========================================================================== */
+.doc-section {
+    margin-bottom: 50px;
+}
+
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.doc-card {
+    background: rgba(13, 27, 42, 0.75);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.15);
+}
+
+.doc-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.doc-card h3 {
+    color: #beff11;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.doc-card p {
+    color: #a8b2d1;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.doc-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.doc-card ul li {
+    color: #a8b2d1;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.doc-card ul li strong {
+    color: #ffffff;
+}
+
+/* Rodapé Digital */
+.main-footer {
+    background: #020412;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    padding: 50px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-brand {
+    max-width: 380px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #a8b2d1;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-contacts h4 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.8rem;
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: #beff11;
+}
+
+.icon-digital {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: rgba(0, 212, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.icon-digital svg {
+    width: 20px;
+    height: 20px;
+    stroke: #00d4ff;
+    transition: stroke 0.3s ease;
+}
+
+.contact-item:hover .icon-digital {
+    background: #beff11;
+    border-color: #beff11;
+    box-shadow: 0 0 15px rgba(190, 255, 17, 0.5);
+}
+
+.contact-item:hover .icon-digital svg {
+    stroke: #03071e;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+/* Responsividade Geral */
+@media (max-width: 768px) {
+    .carousel-slide {
+        min-width: 100%;
+    }
+    .hero-banner-wrapper {
+        height: 250px;
+    }
+    .hero-banner-overlay h2 {
+        font-size: 2rem;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
 }
