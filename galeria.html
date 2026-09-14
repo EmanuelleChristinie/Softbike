@@ -184,420 +184,50 @@
 <body>
 
     <header>
-        <div class="logo"><img src="img/logo.png" alt="SOFTBYKE Logo"></div>
-        <nav>
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo"><img src="img/logo.png" alt="SOFTBYKE Logo"></div>
+        </div>
+
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
                 <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="galeria.html" class="active">Galeria</a></li>
                 <li><a href="documentos.html">Documentos</a></li>
             </ul>
         </nav>
+
+        <div class="search-box">
+            <input type="text" placeholder="Procurar produto especifico...">
+        </div>
     </header>
 
+    <div class="side-drawer" id="sideDrawer">
+        <button class="drawer-close" id="drawerClose">✕</button>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="bicicletas.html">BICICLETAS</a></li>
+            <li><a href="empresa.html">EMPRESA</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="documentos.html">DOCUMENTOS</a></li>
+        </ul>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
     <main class="page-container">
-        <div class="gallery-header">
-            <h1 class="page-title">GALERIA DE ACESSÓRIOS E PEÇAS</h1>
-            <p class="page-subtitle">Confira nosso acervo de equipamentos e componentes SOFTBYKE</p>
-        </div>
+        <h1 class="page-title">GALERIA</h1>
+        <p class="page-subtitle">Espaço reservado para ensaios visuais e eventos SOFTBYKE</p>
 
-        <div class="gallery-grid">
-
-            <!-- Card 1 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Cadeado1.png" alt="Cadeado U-Lock">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Cadeado U-Lock Supreme</h3>
-                    <p class="product-desc">Trava de alta segurança para bicicleta em aço temperado.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 149,90</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Cadeado2.png" alt="Cadeado Cabo de Aço">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Cadeado Cabo Kryptonite</h3>
-                    <p class="product-desc">Cabo de aço flexível com segredo configurável.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 89,90</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Campainha1.png" alt="Campainha Alumínio">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Campainha Tonal</h3>
-                    <p class="product-desc">Sonoridade alta para uso urbano e segurança no trânsito.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 25,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Campainha2.png" alt="Campainha Clássica">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Campainha Vintage</h3>
-                    <p class="product-desc">Design clássico em latão cromado com fixação universal.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 35,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Capacete1.png" alt="Capacete Aero">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Capacete Urban Aero</h3>
-                    <p class="product-desc">Proteção reforçada com saídas de ar e luz traseira integradas.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 220,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Capacete2.png" alt="Capacete MTB">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Capacete Trail MTB</h3>
-                    <p class="product-desc">Viseira removível e casco expandido para trilhas exigentes.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 280,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Capacete3.png" alt="Capacete Bontrager Starvos">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Capacete Bontrager Starvos</h3>
-                    <p class="product-desc">Modelo ergonômico com estrutura em material composto In-mold.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 459,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Capacete4.png" alt="Capacete Infantil">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Capacete Infantil Nutcase Baby Nutty</h3>
-                    <p class="product-desc">Desenvolvido para crianças de 1 a 3 anos, traz casco leve de alta proteção.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 180,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 9 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Cesta1.png" alt="Cesta Vime Retrô">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Cesta de Vime Retrô</h3>
-                    <p class="product-desc">Cesta frontal confeccionada em vime natural trançado à mão.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 69,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 10 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Cesta2.png" alt="Cesta de Alumínio">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Cesta de Alumínio</h3>
-                    <p class="product-desc">Cesta frontal em liga de alumínio leve e resistente à oxidação.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 280,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 11 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Disco1.png" alt="Disco de Freio">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Rotor de Freio XLC BR-X79</h3>
-                    <p class="product-desc">Disco em aço inoxidável durável com sistema de fixação por 6 furos.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 230,91</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 12 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Disco2.png" alt="Rotor Flutuante">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Rotor Flutuante MAX1 Alux</h3>
-                    <p class="product-desc">Rotores de freio flutuantes para maior eficiência e dissipação de calor.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 170,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 13 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Disco3.png" alt="Rotor Shimano Deore XT">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Rotor Shimano Deore XT</h3>
-                    <p class="product-desc">Disco de alta gama estruturado com tecnologia Ice-Technologies.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 459,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 14 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Guidao1.png" alt="Guidão BMX">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Guidão BMX 2 Peças</h3>
-                    <p class="product-desc">Guidão de alta elevação fabricado em aço carbono reforçado.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 78,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 15 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Guidao2.png" alt="Guidão Shimano PRO">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Guidão Shimano PRO PLT</h3>
-                    <p class="product-desc">Guidão para Speed confeccionado em alumínio liga 2014 T6 leve.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 590,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 16 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Guidao3.png" alt="Guidão Easton Haven">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Guidão Easton Haven Carbon</h3>
-                    <p class="product-desc">Guidão para mountain bike construído em fibra de carbono premium.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 850,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 17 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Guidao4.png" alt="Guidão Ape Hanger">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Guidão Ape Hanger Cromado</h3>
-                    <p class="product-desc">Guidão alto com acabamento totalmente polido e cromado brilhante.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 70,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 18 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Luz dianteira-traseira1.png" alt="Sinalizadores LED">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Sinalizadores LED Modern</h3>
-                    <p class="product-desc">Kit completo com farol dianteiro branco e pisca traseiro vermelho.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 75,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 19 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Óculos-de-ciclismo1.png" alt="Óculos Jawbreaker">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Óculos Oakley Jawbreaker</h3>
-                    <p class="product-desc">Óculos de proteção com lentes polarizadas e alta resistência.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 1.124,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 20 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Óculos-de-ciclismo2.png" alt="Óculos Bollé Aeromax">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Óculos Bollé Aeromax</h3>
-                    <p class="product-desc">Óculos esportivo com amplo campo de visão e lentes B-Max.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 950,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 21 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Óculos-de-ciclismo3.png" alt="Óculos Radar EV Path">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Óculos Oakley Radar EV</h3>
-                    <p class="product-desc">Desempenho extremo com armação ultraleve em O Matter.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 949,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 22 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Óculos-de-ciclismo4.png" alt="Óculos Retina Burn">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Óculos Jawbreaker Neon</h3>
-                    <p class="product-desc">Edição especial Retina Burn com armação amarelo-neon fluorescente.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 1.150,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 23 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Óculos-de-ciclismo5.png" alt="Óculos M2 Frame">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Óculos Oakley M2 Frame</h3>
-                    <p class="product-desc">Armação esportiva de meio aro ultraleve na cor Redline.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 680,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 24 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Pedal1.png" alt="Pedal BBB MountainHigh">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Pedal BBB MountainHigh</h3>
-                    <p class="product-desc">Plataforma aderente para modalidades de trilha e MTB.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 240,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 25 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Pedal2.png" alt="Pedal Easton Flatboy">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Pedal Easton Flatboy</h3>
-                    <p class="product-desc">Usinado em CNC em alumínio aeronáutico 6061-T6.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 655,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 26 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Pneu1.png" alt="Pneu Retrô Aro 26">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Pneu Retrô Aro 26</h3>
-                    <p class="product-desc">Desenho clássico com excelente rodagem para a cidade.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 135,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 27 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Pneu2.png" alt="Roda Tokyowheel">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Roda Tokyowheel Epic</h3>
-                    <p class="product-desc">Roda de alta performance em fibra de carbono.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 3.800,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 28 -->
-            <div class="product-card">
-                <div class="card-img-wrapper">
-                    <img src="img/Pneu3.png" alt="Pneu Apollo Tyres">
-                </div>
-                <div class="card-content">
-                    <h3 class="product-title">Pneu Apollo Tyres Performance</h3>
-                    <p class="product-desc">Composto reforçado para alto rendimento e tração.</p>
-                    <div class="product-footer">
-                        <span class="product-price">R$ 190,00</span>
-                    </div>
-                </div>
-            </div>
-
+        <div class="empty-gallery-box">
+            <h2>Galeria em atualização</h2>
+            <p>Novos conteúdos visuais serão adicionados em breve.</p>
         </div>
     </main>
 
+    <script src="scripts.js"></script>
 </body>
 </html>

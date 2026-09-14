@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bicicletas | SOFTBYKE</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo"><img src="img/logo.png" alt="SOFTBYKE Logo"></div>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bicicletas.html" class="active">Bicicletas</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" placeholder="Procurar bicicleta...">
+        </div>
+    </header>
+
+    <!-- Menu Lateral das Opções -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="drawer-close" id="drawerClose">✕</button>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="bicicletas.html">BICICLETAS</a></li>
+            <li><a href="empresa.html">EMPRESA</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="documentos.html">DOCUMENTOS</a></li>
+        </ul>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <main class="page-container">
+        <h1 class="page-title">CATÁLOGO DE BICICLETAS</h1>
+        <p class="page-subtitle">Conheça todos os modelos de alta performance da SOFTBYKE</p>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="img/1.png" alt="ElectroBike Kross"></div>
+                <div class="card-content">
+                    <h3 class="product-title">ElectroBike Kross</h3>
+                    <p class="product-desc">Bicicleta elétrica para percursos urbanos e trilhas leves.</p>
+                    <span class="product-price">R$ 12.500,00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="img/2.png" alt="Bintee Mountain"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Bintee Mountain</h3>
+                    <p class="product-desc">Desenvolvida para máxima estabilidade em mountain bike.</p>
+                    <span class="product-price">R$ 8.900,00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="img/3.png" alt="Mongoose Switchback"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Mongoose Switchback</h3>
+                    <p class="product-desc">Agilidade e tração superior para descidas táticas.</p>
+                    <span class="product-price">R$ 6.400,00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="img/4.png" alt="Avanti Galant"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Avanti Galant</h3>
+                    <p class="product-desc">Estrutura aerodinâmica leve voltada para velocidade.</p>
+                    <span class="product-price">R$ 9.800,00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="img/5.png" alt="Santa Cruz Nomad"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Santa Cruz Nomad</h3>
+                    <p class="product-desc">Quadro em fibra de carbono para enduro extremo.</p>
+                    <span class="product-price">R$ 24.000,00</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="img/6.png" alt="Solomo Aggressive"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Solomo Aggressive</h3>
+                    <p class="product-desc">Design robusto projetado para qualquer terreno.</p>
+                    <span class="product-price">R$ 7.200,00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

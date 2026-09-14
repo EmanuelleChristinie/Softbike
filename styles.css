@@ -9,56 +9,163 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+html, body {
     background-color: #03071e;
     color: #fff;
     min-height: 100vh;
     overflow-x: hidden;
+<<<<<<< HEAD
     overflow-y: auto; /* Permite a rolagem nas páginas longas */
 }
 
 /* ==========================================================================
    HEADER / NAVEGAÇÃO
    ========================================================================== */
+=======
+}
+
+/* Header Fixo e Visível */
+>>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     padding: 20px 80px;
+=======
+    padding: 15px 50px;
+>>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+<<<<<<< HEAD
     background-color: rgba(3, 7, 30, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+=======
+    background: rgba(3, 7, 30, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Botão Três Traços (Hambúrguer) */
+.menu-toggle {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+    color: #00d4ff;
+>>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 }
 
 header .logo img {
-    height: 45px;
+    height: 42px;
     width: auto;
     object-fit: contain;
 }
 
-header nav ul {
+/* Menu Principal Superior */
+nav.main-nav ul {
     display: flex;
-    gap: 40px;
+    gap: 25px;
 }
 
-header nav ul li a {
+nav.main-nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     transition: 0.3s;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
+nav.main-nav ul li a:hover,
+nav.main-nav ul li a.active {
+    color: #beff11;
+    text-shadow: 0 0 8px rgba(190, 255, 17, 0.6);
+}
+
+/* Barra de Pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(13, 27, 42, 0.8);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    border-radius: 20px;
+    padding: 6px 15px;
+    width: 220px;
+    transition: all 0.3s ease;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    width: 100%;
+}
+
+.search-box input::placeholder {
+    color: #a8b2d1;
+}
+
+.search-box:focus-within {
+    border-color: #00d4ff;
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.4);
+}
+
+/* Side Drawer (Menu Retrátil dos Três Traços) */
+.side-drawer {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    background: #07111e;
+    border-right: 1px solid rgba(0, 212, 255, 0.3);
+    z-index: 200;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.4s ease;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.side-drawer.open {
+    left: 0;
+}
+
+.drawer-close {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.drawer-close:hover {
     color: #beff11;
 }
 
+<<<<<<< HEAD
 /* Container para páginas internas (Empresa, Galeria, Documentos) */
 .page-container {
     padding-top: 130px; /* Dá espaço para o Header fixo não cobrir o título */
@@ -87,6 +194,43 @@ header nav ul li a.active {
 /* ==========================================================================
    PÁGINA HOME (SLIDER)
    ========================================================================== */
+=======
+.side-drawer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.side-drawer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.side-drawer ul li a:hover {
+    color: #00d4ff;
+    padding-left: 8px;
+}
+
+.drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 150;
+    display: none;
+}
+
+.drawer-overlay.active {
+    display: block;
+}
+
+/* Home / Slider */
+>>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 .slider {
     height: 100vh;
     width: 100vw;
@@ -121,18 +265,22 @@ header nav ul li a.active {
     transform: translateY(-50%);
     width: 55%;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider .list .item .bike-img img {
     width: 100%;
     max-height: 60vh;
     object-fit: contain;
-    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.6));
-    transition: transform 0.8s ease-in-out;
+    filter: drop-shadow(0 25px 35px rgba(0, 212, 255, 0.55)) drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8));
+    transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
 }
 
 .slider .list .item.active .bike-img img {
     transform: rotate(-12deg) scale(1.03);
+    filter: drop-shadow(0 35px 45px rgba(0, 212, 255, 0.75)) drop-shadow(0 5px 15px rgba(0, 0, 0, 0.9));
 }
 
 .slider .list .item .content {
@@ -219,6 +367,14 @@ header nav ul li a.active {
     transition: 0.3s;
 }
 
+<<<<<<< HEAD
+=======
+.arrows button img {
+    width: 20px;
+    height: 20px;
+}
+
+>>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
 .arrows button#prev img {
     transform: scaleX(-1);
 }
@@ -263,6 +419,7 @@ header nav ul li a.active {
     background-color: #beff11;
 }
 
+<<<<<<< HEAD
 /* ==========================================================================
    PÁGINA EMPRESA (EQUIPE)
    ========================================================================== */
@@ -326,6 +483,36 @@ header nav ul li a.active {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+=======
+/* Estrutura das Páginas Internas */
+.page-container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page-title {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    color: #a8b2d1;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+/* Grid Geral de Cards */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+>>>>>>> 2c9f7ac (Ajuste na navegacao, drawer lateral, imagens de parceiros e nova pagina de bicicletas)
     gap: 25px;
 }
 
@@ -336,14 +523,14 @@ header nav ul li a.active {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     backdrop-filter: blur(5px);
+    transition: 0.3s;
 }
 
 .product-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     border-color: rgba(0, 212, 255, 0.7);
-    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
 }
 
 .card-img-wrapper {
@@ -363,7 +550,7 @@ header nav ul li a.active {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -373,42 +560,126 @@ header nav ul li a.active {
     font-size: 1.1rem;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .product-desc {
     font-size: 0.85rem;
     color: #a8b2d1;
-    line-height: 1.4;
     margin-bottom: 15px;
     flex-grow: 1;
 }
 
-.product-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
 .product-price {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #beff11;
 }
 
-/* Responsive UI Breakpoints */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 30px;
-    }
-    
-    header nav ul {
-        gap: 20px;
-    }
-    
-    .page-title {
-        font-size: 2.5rem;
-    }
+/* Categoria de Produtos */
+.category-section {
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 2.2rem;
+    color: #00d4ff;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Galeria em Branco */
+.empty-gallery-box {
+    border: 2px dashed rgba(0, 212, 255, 0.3);
+    border-radius: 15px;
+    padding: 80px 20px;
+    text-align: center;
+    color: #a8b2d1;
+    background: rgba(13, 27, 42, 0.3);
+}
+
+/* Empresa / Equipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: rgba(13, 27, 42, 0.75);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 212, 255, 0.6);
+}
+
+.member-circle {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #beff11;
+    box-shadow: 0 0 15px rgba(190, 255, 17, 0.4);
+}
+
+.member-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.team-card .role {
+    color: #beff11;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-card .bio {
+    color: #a8b2d1;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+/* Documentos */
+.sponsors-grid-docs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.sponsor-doc-card {
+    background: rgba(13, 27, 42, 0.75);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sponsor-doc-card img {
+    max-width: 130px;
+    max-height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
 }

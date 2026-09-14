@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Documentos | SOFTBYKE</title>
 
@@ -133,49 +130,69 @@
         }
     </style>
 </head>
-
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="SOFTBYKE Logo">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo"><img src="img/logo.png" alt="SOFTBYKE Logo"></div>
         </div>
-        <nav>
+
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
                 <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="documentos.html" class="active">Documentos</a></li>
             </ul>
         </nav>
+
+        <div class="search-box">
+            <input type="text" placeholder="Procurar produto especifico...">
+        </div>
     </header>
 
+    <div class="side-drawer" id="sideDrawer">
+        <button class="drawer-close" id="drawerClose">✕</button>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="bicicletas.html">BICICLETAS</a></li>
+            <li><a href="empresa.html">EMPRESA</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="documentos.html">DOCUMENTOS</a></li>
+        </ul>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
     <main class="page-container">
-        <h1 class="page-title">POLÍTICAS E TERMOS</h1>
-        <p class="page-subtitle">Transparência e segurança para a sua melhor experiência conosco.</p>
+        <h1 class="page-title">DOCUMENTOS E PARCEIROS</h1>
+        <p class="page-subtitle">Informações institucionais e marcas patrocinadoras da loja</p>
 
-        <div class="docs-grid">
-            <div class="doc-card">
-                <h2>Emissão de Nota Fiscal</h2>
-                <p>Todos os produtos comercializados pela SOFTBYKE acompanham Nota Fiscal Eletrônica (NF-e). A emissão é automática no momento da confirmação do pedido e enviada diretamente para o e-mail cadastrado.</p>
+        <section>
+            <h2 class="category-title">PATROCINADORES OFICIAIS</h2>
+            <div class="sponsors-grid-docs">
+                <div class="sponsor-doc-card">
+                    <img src="img/shimano.png" alt="Shimano">
+                    <h4>SHIMANO</h4>
+                </div>
+                <div class="sponsor-doc-card">
+                    <img src="img/specialized.png" alt="Specialized">
+                    <h4>SPECIALIZED</h4>
+                </div>
+                <div class="sponsor-doc-card">
+                    <img src="img/pirelli.png" alt="Pirelli">
+                    <h4>PIRELLI</h4>
+                </div>
+                <div class="sponsor-doc-card">
+                    <img src="img/rockshox.png" alt="RockShox">
+                    <h4>ROCKSHOX</h4>
+                </div>
             </div>
-
-            <div class="doc-card">
-                <h2>Termos de Garantia</h2>
-                <p>Nossos quadros possuem garantia legal contra defeitos de fabricação de até 3 anos. Componentes e peças de desgaste contam com garantia de 12 meses direto com os fabricantes oficiais.</p>
-            </div>
-
-            <div class="doc-card">
-                <h2>Trocas e Devoluções</h2>
-                <p>Você pode solicitar a troca ou devolução do produto no prazo de até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor, desde que esteja sem marcas de uso.</p>
-            </div>
-
-            <div class="doc-card">
-                <h2>Termos e Condições Gerais</h2>
-                <p>Ao navegar em nossa plataforma, o usuário concorda com o uso de dados para processamento de compras e melhorias de navegação, mantendo o compromisso de total sigilo da SOFTBYKE.</p>
-            </div>
-        </div>
+        </section>
     </main>
-</body>
 
+    <script src="scripts.js"></script>
+</body>
 </html>
