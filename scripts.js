@@ -51,7 +51,7 @@ dots.forEach((li, index) => {
     });
 });
 
-/* Lógica do Menu Três Traços (Side Drawer) */
+/* Lógica do Menu Três Traços */
 const menuToggle = document.getElementById('menuToggle');
 const drawerClose = document.getElementById('drawerClose');
 const sideDrawer = document.getElementById('sideDrawer');
