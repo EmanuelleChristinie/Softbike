@@ -124,32 +124,28 @@
 </head>
 
 <body>
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 15px 30px; width: 100%; box-sizing: border-box;">
-
-    <div class="header-left" style="display: flex; align-items: center; gap: 15px;">
-        <button class="menu-toggle" id="menuToggle">☰</button>
-        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-            <span class="logo-text">SOFT <em>BIKE</em></span>
-        </a>
-    </div>
-
-    <nav class="main-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bicicletas.html">Bicicletas</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="empresa.html">Empresa</a></li>
-        <li><a href="documentos.html" class="active">Documentos</a></li>
-        <li><a href="artigos.html">Artigos</a></li>
-    </ul>
-</nav>
-
-    
-    <div class="search-box">
-        <input type="text" placeholder="Procurar produto específico...">
-    </div>
-</header>
+    <header>
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <a href="index.html" class="logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="documentos.html" class="active">Documentos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Procurar produto específico...">
+        </div>
+    </header>
 
     <!-- Side Drawer -->
     <div class="side-drawer" id="sideDrawer">
@@ -409,7 +405,7 @@
         <!-- PORTAIS DE REFERÊNCIA & LINKS -->
         <section class="doc-section">
             <h2 class="category-title">Portais de Referência & Links Úteis</h2>
-            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">Acompanhe as principales federações,
+            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">Acompanhe as principais federações,
                 tecnologias e portais do universo do ciclismo.</p>
 
             <div class="link-grid">
@@ -492,10 +488,11 @@
     </main>
 
     <!-- RODAPÉ COMPLETO -->
-    <footer class="main-footer">
+    <footer class="main-footer">7
         <div class="footer-container">
             <div class="footer-logo-row">
-                <img src="img/logo.png" alt="SOFTBYKE" class="footer-logo" style="height: 180px; width: auto;">
+                <img src="img/logo.png" alt="SOFTBYKE" class="footer-logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
             </div>
 
             <div class="footer-contacts">
