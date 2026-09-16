@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Bicicletas | SOFTBYKE</title>
 </head>
+
 <body>
     <header>
         <div class="header-left">
-            <button class="menu-toggle" id="menuToggle">☰</button>
-            <div class="logo"><img src="img/logo.png" alt="SOFTBYKE Logo"></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+            <a href="index.html" class="logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
+            </a>
         </div>
 
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="bicicletas.html" class="active">Bicicletas</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
 
@@ -40,6 +46,7 @@
             <li><a href="produtos.html">PRODUTOS</a></li>
             <li><a href="galeria.html">GALERIA</a></li>
             <li><a href="documentos.html">DOCUMENTOS</a></li>
+            <li><a href="artigos.html">ARTIGOS</a></li>
         </ul>
     </div>
     <div class="drawer-overlay" id="drawerOverlay"></div>
@@ -48,9 +55,19 @@
         <h1 class="page-title">CATÁLOGO DE BICICLETAS</h1>
         <p class="page-subtitle">Conheça todos os modelos de alta performance da SOFTBYKE</p>
 
+        <!-- SUMÁRIO DE NAVEGAÇÃO RÁPIDA -->
+        <div class="categoria-sumario">
+            <span>Categorias:</span>
+            <a href="#e-bikes">E-Bikes / Elétricas</a>
+            <a href="#mtb">Mountain Bike / Trail</a>
+            <a href="#urbanas">Urbanas / Dobráveis</a>
+            <a href="#estrada">Estrada / Carbono</a>
+            <a href="#especiais">Especiais / Fat & BMX</a>
+        </div>
+
         <div class="products-grid">
-            <!-- Bicicletas Originais -->
-            <div class="product-card">
+            <!-- E-bikes / Elétricas -->
+            <div class="product-card" id="e-bikes" data-preco="12500.00">
                 <div class="card-img-wrapper"><img src="img/1.png" alt="ElectroBike Kross"></div>
                 <div class="card-content">
                     <h3 class="product-title">ElectroBike Kross</h3>
@@ -59,116 +76,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/2.png" alt="Bintee Mountain"></div>
-                <div class="card-content">
-                    <h3 class="product-title">Bintee Mountain</h3>
-                    <p class="product-desc">Desenvolvida para máxima estabilidade em mountain bike.</p>
-                    <span class="product-price">R$ 8.900,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/3.png" alt="Mongoose Switchback"></div>
-                <div class="card-content">
-                    <h3 class="product-title">Mongoose Switchback</h3>
-                    <p class="product-desc">Agilidade e tração superior para descidas táticas.</p>
-                    <span class="product-price">R$ 6.400,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/4.png" alt="Avanti Galant"></div>
-                <div class="card-content">
-                    <h3 class="product-title">Avanti Galant</h3>
-                    <p class="product-desc">Estrutura aerodinâmica leve voltada para velocidade.</p>
-                    <span class="product-price">R$ 9.800,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/5.png" alt="Santa Cruz Nomad"></div>
-                <div class="card-content">
-                    <h3 class="product-title">Santa Cruz Nomad</h3>
-                    <p class="product-desc">Quadro em fibra de carbono para enduro extremo.</p>
-                    <span class="product-price">R$ 24.000,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/6.png" alt="Solomo Aggressive"></div>
-                <div class="card-content">
-                    <h3 class="product-title">Solomo Aggressive</h3>
-                    <p class="product-desc">Design robusto projetado para qualquer terreno.</p>
-                    <span class="product-price">R$ 7.200,00</span>
-                </div>
-            </div>
-
-            <!-- Novas Bicicletas (1 a 20) -->
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta1.png" alt="Bicicleta 1"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Trail Master</h3>
-                    <p class="product-desc">Excelente absorção de impacto para percursos irregulares.</p>
-                    <span class="product-price">R$ 5.490,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta2.png" alt="Bicicleta 2"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Urban Glide</h3>
-                    <p class="product-desc">Conforto e agilidade para o deslocamento diário na cidade.</p>
-                    <span class="product-price">R$ 3.890,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta3.png" alt="Bicicleta 3"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Carbon Speed</h3>
-                    <p class="product-desc">Estrutura ultra leve projetada para altas velocidades.</p>
-                    <span class="product-price">R$ 11.200,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta4.png" alt="Bicicleta 4"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Enduro Pro</h3>
-                    <p class="product-desc">Suspensão dupla de alto desempenho para trilhas severas.</p>
-                    <span class="product-price">R$ 14.500,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta5.png" alt="Bicicleta 5"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Cross Country</h3>
-                    <p class="product-desc">Geometria equilibrada para arrancadas rápidas e subidas.</p>
-                    <span class="product-price">R$ 7.800,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta6.png" alt="Bicicleta 6"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Classic Tour</h3>
-                    <p class="product-desc">Design vintage aliado a componentes modernos e confortáveis.</p>
-                    <span class="product-price">R$ 4.200,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta7.png" alt="Bicicleta 7"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Alpine Ridge</h3>
-                    <p class="product-desc">Pneus de cravos largos com máxima aderência no solo.</p>
-                    <span class="product-price">R$ 8.300,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
+            <div class="product-card" data-preco="13900.00">
                 <div class="card-img-wrapper"><img src="img/bicicleta8.png" alt="Bicicleta 8"></div>
                 <div class="card-content">
                     <h3 class="product-title">SoftByke E-Rider Volt</h3>
@@ -177,88 +85,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta9.png" alt="Bicicleta 9"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Gravel Explorer</h3>
-                    <p class="product-desc">Versatilidade perfeita entre asfalto e estradas de terra.</p>
-                    <span class="product-price">R$ 6.900,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta10.png" alt="Bicicleta 10"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Downhill Beast</h3>
-                    <p class="product-desc">Quadro reforçado para descidas técnicas de alta velocidade.</p>
-                    <span class="product-price">R$ 18.500,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta11.png" alt="Bicicleta 11"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Aero Race</h3>
-                    <p class="product-desc">Aerodinâmica avançada testada para competições na estrada.</p>
-                    <span class="product-price">R$ 15.200,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta12.png" alt="Bicicleta 12"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Street Compact</h3>
-                    <p class="product-desc">Estrutura leve e dobrável para facilitar o transporte.</p>
-                    <span class="product-price">R$ 3.400,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta13.png" alt="Bicicleta 13"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Mountain Sport</h3>
-                    <p class="product-desc">Ótimo custo-benefício para quem está iniciando no MTB.</p>
-                    <span class="product-price">R$ 4.950,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta14.png" alt="Bicicleta 14"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Hybrid Commuter</h3>
-                    <p class="product-desc">Combinação de agilidade urbana com suspensão dianteira.</p>
-                    <span class="product-price">R$ 5.100,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta15.png" alt="Bicicleta 15"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Fat Bike Snow & Sand</h3>
-                    <p class="product-desc">Pneus extralargos desenvolvidos para terrenos instáveis.</p>
-                    <span class="product-price">R$ 9.100,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta16.png" alt="Bicicleta 16"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke BMX Street Style</h3>
-                    <p class="product-desc">Construção ultra resistente para manobras e pistas.</p>
-                    <span class="product-price">R$ 2.990,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-img-wrapper"><img src="img/bicicleta17.png" alt="Bicicleta 17"></div>
-                <div class="card-content">
-                    <h3 class="product-title">SoftByke Endurance Plus</h3>
-                    <p class="product-desc">Postura ergonômica projetada para pedais de longa distância.</p>
-                    <span class="product-price">R$ 10.800,00</span>
-                </div>
-            </div>
-
-            <div class="product-card">
+            <div class="product-card" data-preco="21000.00">
                 <div class="card-img-wrapper"><img src="img/bicicleta18.png" alt="Bicicleta 18"></div>
                 <div class="card-content">
                     <h3 class="product-title">SoftByke E-MTB Summit</h3>
@@ -267,7 +94,135 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <!-- Mountain Bike / Trail -->
+            <div class="product-card" id="mtb" data-preco="8900.00">
+                <div class="card-img-wrapper"><img src="img/2.png" alt="Bintee Mountain"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Bintee Mountain</h3>
+                    <p class="product-desc">Desenvolvida para máxima estabilidade em mountain bike.</p>
+                    <span class="product-price">R$ 8.900,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="6400.00">
+                <div class="card-img-wrapper"><img src="img/3.png" alt="Mongoose Switchback"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Mongoose Switchback</h3>
+                    <p class="product-desc">Agilidade e tração superior para descidas táticas.</p>
+                    <span class="product-price">R$ 6.400,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="24000.00">
+                <div class="card-img-wrapper"><img src="img/5.png" alt="Santa Cruz Nomad"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Santa Cruz Nomad</h3>
+                    <p class="product-desc">Quadro em fibra de carbono para enduro extremo.</p>
+                    <span class="product-price">R$ 24.000,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="7200.00">
+                <div class="card-img-wrapper"><img src="img/6.png" alt="Solomo Aggressive"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Solomo Aggressive</h3>
+                    <p class="product-desc">Design robusto projetado para qualquer terreno.</p>
+                    <span class="product-price">R$ 7.200,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="5490.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta1.png" alt="Bicicleta 1"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Trail Master</h3>
+                    <p class="product-desc">Excelente absorção de impacto para percursos irregularidades.</p>
+                    <span class="product-price">R$ 5.490,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="14500.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta4.png" alt="Bicicleta 4"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Enduro Pro</h3>
+                    <p class="product-desc">Suspensão dupla de alto desempenho para trilhas severas.</p>
+                    <span class="product-price">R$ 14.500,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="7800.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta5.png" alt="Bicicleta 5"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Cross Country</h3>
+                    <p class="product-desc">Geometria equilibrada para arrancadas rápidas e subidas.</p>
+                    <span class="product-price">R$ 7.800,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="8300.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta7.png" alt="Bicicleta 7"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Alpine Ridge</h3>
+                    <p class="product-desc">Pneus de cravos largos com máxima aderência no solo.</p>
+                    <span class="product-price">R$ 8.300,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="18500.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta10.png" alt="Bicicleta 10"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Downhill Beast</h3>
+                    <p class="product-desc">Quadro reforçado para descidas técnicas de alta velocidade.</p>
+                    <span class="product-price">R$ 18.500,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="4950.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta13.png" alt="Bicicleta 13"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Mountain Sport</h3>
+                    <p class="product-desc">Ótimo custo-benefício para quem está iniciando no MTB.</p>
+                    <span class="product-price">R$ 4.950,00</span>
+                </div>
+            </div>
+
+            <!-- Urbanas / Dobráveis -->
+            <div class="product-card" id="urbanas" data-preco="3890.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta2.png" alt="Bicicleta 2"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Urban Glide</h3>
+                    <p class="product-desc">Conforto e agilidade para o deslocamento diário na cidade.</p>
+                    <span class="product-price">R$ 3.890,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="4200.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta6.png" alt="Bicicleta 6"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Classic Tour</h3>
+                    <p class="product-desc">Design vintage aliado a componentes modernos e confortáveis.</p>
+                    <span class="product-price">R$ 4.200,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="3400.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta12.png" alt="Bicicleta 12"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Street Compact</h3>
+                    <p class="product-desc">Estrutura leve e dobrável para facilitar o transporte.</p>
+                    <span class="product-price">R$ 3.400,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="5100.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta14.png" alt="Bicicleta 14"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Hybrid Commuter</h3>
+                    <p class="product-desc">Combinação de agilidade urbana com suspensão dianteira.</p>
+                    <span class="product-price">R$ 5.100,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="3200.00">
                 <div class="card-img-wrapper"><img src="img/bicicleta19.png" alt="Bicicleta 19"></div>
                 <div class="card-content">
                     <h3 class="product-title">SoftByke Track Fixie</h3>
@@ -276,7 +231,53 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <!-- Estrada / Carbono / Speed -->
+            <div class="product-card" id="estrada" data-preco="9800.00">
+                <div class="card-img-wrapper"><img src="img/4.png" alt="Avanti Galant"></div>
+                <div class="card-content">
+                    <h3 class="product-title">Avanti Galant</h3>
+                    <p class="product-desc">Estrutura aerodinâmica leve voltada para velocidade.</p>
+                    <span class="product-price">R$ 9.800,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="11200.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta3.png" alt="Bicicleta 3"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Carbon Speed</h3>
+                    <p class="product-desc">Estrutura ultra leve projetada para altas velocidades.</p>
+                    <span class="product-price">R$ 11.200,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="6900.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta9.png" alt="Bicicleta 9"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Gravel Explorer</h3>
+                    <p class="product-desc">Versatilidade perfeita entre asfalto e estradas de terra.</p>
+                    <span class="product-price">R$ 6.900,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="15200.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta11.png" alt="Bicicleta 11"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Aero Race</h3>
+                    <p class="product-desc">Aerodinâmica avançada testada para competições na estrada.</p>
+                    <span class="product-price">R$ 15.200,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="10800.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta17.png" alt="Bicicleta 17"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Endurance Plus</h3>
+                    <p class="product-desc">Postura ergonômica projetada para pedais de longa distância.</p>
+                    <span class="product-price">R$ 10.800,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="27500.00">
                 <div class="card-img-wrapper"><img src="img/bicicleta20.png" alt="Bicicleta 20"></div>
                 <div class="card-content">
                     <h3 class="product-title">SoftByke Titanium Pro</h3>
@@ -284,9 +285,42 @@
                     <span class="product-price">R$ 27.500,00</span>
                 </div>
             </div>
+
+            <!-- Especiais / Fat & BMX -->
+            <div class="product-card" id="especiais" data-preco="9100.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta15.png" alt="Bicicleta 15"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke Fat Bike Snow & Sand</h3>
+                    <p class="product-desc">Pneus extralargos desenvolvidos para terrenos instáveis.</p>
+                    <span class="product-price">R$ 9.100,00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-preco="2990.00">
+                <div class="card-img-wrapper"><img src="img/bicicleta16.png" alt="Bicicleta 16"></div>
+                <div class="card-content">
+                    <h3 class="product-title">SoftByke BMX Street Style</h3>
+                    <p class="product-desc">Construção ultra resistente para manobras e pistas.</p>
+                    <span class="product-price">R$ 2.990,00</span>
+                </div>
+            </div>
         </div>
     </main>
 
+    <footer
+        style="background-color: #050b14; border-top: 1px solid #1e293b; padding: 25px 20px; text-align: center; color: #94a3b8; font-family: 'Poppins', sans-serif; margin-top: 40px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p style="font-size: 0.95rem; margin-bottom: 8px; color: #f8fafc;">
+                <strong>Curso:</strong> Ciência da Computação | <strong>Disciplina:</strong> Desenvolvimento Web |
+                <strong>Turma:</strong> A
+            </p>
+            <p style="font-size: 0.85rem; color: #beff11; margin: 0;">
+                <strong>Integrantes:</strong> Emanuelle Christinie • Thamires Mendonça • Júlia Marques
+            </p>
+        </div>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
+
 </html>

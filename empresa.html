@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <title>Empresa | SOFTBYKE</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -24,22 +26,6 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-        }
-
-        /* Header Padronizado */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-            background: rgba(3, 7, 30, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .header-left {
@@ -307,18 +293,104 @@
             .team-grid {
                 grid-template-columns: 1fr;
             }
+
             header {
                 padding: 20px 40px;
             }
+
             header nav.main-nav {
                 display: none;
             }
+
             .page-container {
                 padding: 120px 20px 40px 20px;
             }
+
             .main-footer {
                 padding: 40px 20px 20px 20px;
             }
+        }
+
+        /* Estilo do Briefing */
+        .briefing-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .briefing-card {
+            background: #091322;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .briefing-card:hover {
+            border-color: #beff11;
+            transform: translateY(-3px);
+        }
+
+        .briefing-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 10px;
+        }
+
+        .briefing-badge {
+            background: #beff11;
+            color: #050b14;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'League Gothic', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .alert-badge {
+            background: #ff4757;
+            color: #fff;
+        }
+
+        .briefing-header h3 {
+            color: #f8fafc;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .briefing-content p {
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .briefing-content strong {
+            color: #beff11;
+        }
+
+        .briefing-content ul {
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .briefing-content ul li {
+            margin-bottom: 6px;
+        }
+
+        .briefing-alert {
+            border-color: rgba(255, 71, 87, 0.4);
+        }
+
+        .team-list p {
+            font-size: 0.82rem;
+            margin-bottom: 6px;
         }
     </style>
 </head>
@@ -330,17 +402,18 @@
         <div class="header-left">
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
             <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="SOFTBYKE Logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
             </a>
         </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="bicicletas.html">Bicicletas</a></li>
-                <li><a href="empresa.html" class="active">Empresa</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="empresa.html" class="active">Empresa</a></li>
                 <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
     </header>
@@ -373,7 +446,8 @@
                 <h3>Emanuelle Christinie R. de Oliveira</h3>
                 <span class="role">Desenvolvimento & Programação</span>
                 <p class="bio">
-                    Mente lógica e criativa por trás dos códigos da SOFTBYKE. Responsável por dar vida ao site, estruturar a arquitetura web e garantir uma navegação fluida, ágil e interativa.
+                    Mente lógica e criativa por trás dos códigos da SOFTBYKE. Responsável por dar vida ao site,
+                    estruturar a arquitetura web e garantir uma navegação fluida, ágil e interativa.
                 </p>
             </div>
 
@@ -385,7 +459,8 @@
                 <h3>Thamires Mendonça</h3>
                 <span class="role">UI/UX & Design Visual</span>
                 <p class="bio">
-                    Especialista em transformar ideias em conceitos visuais marcantes. Responsável pela identidade, paleta de cores e estética futurista que garantem o visual único do projeto.
+                    Especialista em transformar ideias em conceitos visuais marcantes. Responsável pela identidade,
+                    paleta de cores e estética futurista que garantem o visual único do projeto.
                 </p>
             </div>
 
@@ -397,11 +472,120 @@
                 <h3>Julia Marques</h3>
                 <span class="role">Pesquisa & Planejamento de Conteúdo</span>
                 <p class="bio">
-                    Estrategista do projeto. Mapeou as necessidades dos usuários e definiu as funcionalidades e os conteúdos essenciais para garantir um site completo e informativo.
+                    Estrategista do projeto. Mapeou as necessidades dos usuários e definiu as funcionalidades e os
+                    conteúdos essenciais para garantir um site completo e informativo.
                 </p>
             </div>
         </div>
     </main>
+
+    <!-- Seção Briefing Oficial com CSS embutido para centralizar -->
+    <section class="doc-section" style="max-width: 1300px; margin: 0 auto; padding: 40px 20px 80px 20px;">
+        <h2
+            style="font-family: 'League Gothic', sans-serif; font-size: 3rem; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; margin-bottom: 10px;">
+            Briefing Oficial do Projeto
+        </h2>
+
+        <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 30px;">
+            Alinhamento estratégico, diretrizes visuais e especificações de escopo da plataforma SOFTBYKE.
+        </p>
+
+        <div class="briefing-container">
+
+            <!-- Bloco 1: Visão Geral -->
+            <div class="briefing-card">
+                <div class="briefing-header">
+                    <span class="briefing-badge">01</span>
+                    <h3>Visão Geral & Ramo de Atuação</h3>
+                </div>
+                <div class="briefing-content">
+                    <p><strong>Ramo:</strong> Comércio e distribuição de bicicletas, peças e acessórios voltados para
+                        ciclismo urbano, de estrada e Mountain Bike (MTB).</p>
+                    <p><strong>Estrutura:</strong> Sede única com foco na expansão de atendimento e vendas online.</p>
+                    <p><strong>Objetivos:</strong> Estabelecer um portal institucional e catálogo interativo com
+                        exibição clara de produtos, preços e equipe técnica.</p>
+                </div>
+            </div>
+
+            <!-- Bloco 2: Produtos e Público-Alvo -->
+            <div class="briefing-card">
+                <div class="briefing-header">
+                    <span class="briefing-badge">02</span>
+                    <h3>Produtos & Público-Alvo</h3>
+                </div>
+                <div class="briefing-content">
+                    <p><strong>Produtos Oferecidos:</strong> Bicicletas (urbanas e alta performance), componentes
+                        (pedais, pneus, selins, discos) e segurança (capacetes, u-locks, faróis).</p>
+                    <p><strong>Público-Alvo:</strong> Ciclistas urbanos, praticantes de MTB, cicloturistas e entusiastas
+                        do esporte que buscam equipamentos de alta qualidade.</p>
+                </div>
+            </div>
+
+            <!-- Bloco 3: Análise de Mercado -->
+            <div class="briefing-card">
+                <div class="briefing-header">
+                    <span class="briefing-badge">03</span>
+                    <h3>Análise de Mercado & Referências</h3>
+                </div>
+                <div class="briefing-content">
+                    <p><strong>Vantagens:</strong> Identidade visual marcante, catálogo diversificado, navegação focada
+                        em UX e transparência documental.</p>
+                    <p><strong>Desafios:</strong> Consolidação de autoridade de marca nova no ambiente digital.</p>
+                    <p><strong>Referências:</strong> Plataformas de e-commerce internacional de ciclismo (Specialized,
+                        Trek e Canyon).</p>
+                </div>
+            </div>
+
+            <!-- Bloco 4: Diretrizes Visuais -->
+            <div class="briefing-card">
+                <div class="briefing-header">
+                    <span class="briefing-badge">04</span>
+                    <h3>Diretrizes Visuais & Tecnologias</h3>
+                </div>
+                <div class="briefing-content">
+                    <p><strong>Estética:</strong> Layout Dark Mode (azul marinho profundo e preto), elementos
+                        acrílico/blur (backdrop-filter) e detalhes neon (<code>#beff11</code> e ciano).</p>
+                    <p><strong>Tipografia:</strong> <em>League Gothic</em> para títulos e <em>Poppins</em> para leitura.
+                    </p>
+                    <p><strong>Tecnologias:</strong> HTML5 estruturado e CSS3 avançado (Flexbox, Grid) totalmente
+                        responsivo.</p>
+                </div>
+            </div>
+
+            <!-- Bloco 5: Objeções -->
+            <div class="briefing-card briefing-alert">
+                <div class="briefing-header">
+                    <span class="briefing-badge alert-badge">05</span>
+                    <h3>Objeções & Regras de Design</h3>
+                </div>
+                <div class="briefing-content">
+                    <ul>
+                        <li>Não utilizar layouts claros (light mode) genéricos.</li>
+                        <li>Evitar travamento de rolagem no <code>body/html</code> (<code>overflow: hidden</code>).</li>
+                        <li>Não deixar títulos ocultos sob o menu fixo.</li>
+                        <li>Garantir padronização no tamanho de todas as imagens de produtos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloco 6: Equipe do Projeto -->
+            <div class="briefing-card">
+                <div class="briefing-header">
+                    <span class="briefing-badge">06</span>
+                    <h3>Equipe do Projeto</h3>
+                </div>
+                <div class="briefing-content team-list">
+                    <p><strong>Emanuelle Christinie R. de Oliveira:</strong> Desenvolvimento & Programação
+                        (<em>emanuelle.christinie@sempreceub.com</em>)</p>
+                    <p><strong>Thamires Mendonça:</strong> UI/UX & Design Visual (<em>thamires.mc@sempreceub.com</em>)
+                    </p>
+                    <p><strong>Julia Marques:</strong> Pesquisa & Planejamento de Conteúdo
+                        (<em>jumneves@sempreceub.com</em>)</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Rodapé Completo -->
     <footer class="main-footer">
@@ -416,21 +600,33 @@
                 <div class="contact-list">
                     <a href="https://instagram.com/SoftBike_" target="_blank" class="contact-item">
                         <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
                         </div>
                         <span>@SoftBike_</span>
                     </a>
 
                     <a href="mailto:Softbike-Brasilmovimento@gmail.com" class="contact-item">
                         <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
                         </div>
                         <span>Softbike-Brasilmovimento@gmail.com</span>
                     </a>
 
                     <a href="tel:61999999999" class="contact-item">
                         <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
                         </div>
                         <span>(61) 99999-9999</span>
                     </a>
@@ -439,7 +635,8 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 SOFTBYKE — Ciência da Computação (Turma A) | Integrantes: Emanuelle Christinie • Thamires Mendonça • Júlia Marques</p>
+            <p>&copy; 2026 SOFTBYKE — Ciência da Computação (Turma A) | Integrantes: Emanuelle Christinie • Thamires
+                Mendonça • Júlia Marques</p>
         </div>
     </footer>
 
@@ -450,12 +647,12 @@
         const drawerClose = document.getElementById('drawerClose');
         const drawerOverlay = document.getElementById('drawerOverlay');
 
-        if(menuToggle) {
+        if (menuToggle) {
             menuToggle.addEventListener('click', () => {
                 sideDrawer.classList.add('open');
                 drawerOverlay.classList.add('active');
             });
-            
+
             const closeDrawer = () => {
                 sideDrawer.classList.remove('open');
                 drawerOverlay.classList.remove('active');
@@ -468,4 +665,5 @@
     <script src="scripts.js"></script>
 
 </body>
+
 </html>

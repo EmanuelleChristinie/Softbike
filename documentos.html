@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOFTBYKE - Documentos e Institucional</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         .doc-section {
             margin-bottom: 45px;
@@ -39,7 +42,8 @@
             text-align: left;
         }
 
-        .custom-table th, .custom-table td {
+        .custom-table th,
+        .custom-table td {
             border: 1px solid #1e293b;
             padding: 12px 15px;
         }
@@ -116,106 +120,26 @@
             color: #94a3b8;
             margin: 0;
         }
-
-        /* Estilo do Briefing */
-        .briefing-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 20px;
-        }
-
-        .briefing-card {
-            background: #091322;
-            border: 1px solid #1e293b;
-            border-radius: 8px;
-            padding: 20px;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .briefing-card:hover {
-            border-color: #beff11;
-            transform: translateY(-3px);
-        }
-
-        .briefing-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-            border-bottom: 1px solid #1e293b;
-            padding-bottom: 10px;
-        }
-
-        .briefing-badge {
-            background: #beff11;
-            color: #050b14;
-            font-weight: 700;
-            font-size: 0.85rem;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-family: 'League Gothic', sans-serif;
-            letter-spacing: 1px;
-        }
-
-        .alert-badge {
-            background: #ff4757;
-            color: #fff;
-        }
-
-        .briefing-header h3 {
-            color: #f8fafc;
-            font-size: 1.1rem;
-            margin: 0;
-        }
-
-        .briefing-content p {
-            color: #cbd5e1;
-            font-size: 0.85rem;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-
-        .briefing-content strong {
-            color: #beff11;
-        }
-
-        .briefing-content ul {
-            color: #cbd5e1;
-            font-size: 0.85rem;
-            padding-left: 18px;
-            margin: 0;
-        }
-
-        .briefing-content ul li {
-            margin-bottom: 6px;
-        }
-
-        .briefing-alert {
-            border-color: rgba(255, 71, 87, 0.4);
-        }
-
-        .team-list p {
-            font-size: 0.82rem;
-            margin-bottom: 6px;
-        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-left">
             <button class="menu-toggle" id="menuToggle">☰</button>
             <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="SOFTBYKE Logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
             </a>
         </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="bicicletas.html">Bicicletas</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="documentos.html" class="active">Documentos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
         <div class="search-box">
@@ -239,21 +163,22 @@
 
     <!-- Conteúdo Principal -->
     <main class="page-container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
-        
+
         <h1 class="page-title">Documentos & Transparência</h1>
         <p class="page-subtitle">Diretrizes institucionais, especificações de produtos e referências do projeto.</p>
 
         <!-- 1: NOSSOS VALORES -->
         <section class="doc-section">
             <h2 class="category-title">Nossos Valores & Diretrizes</h2>
-            
+
             <div class="doc-grid">
                 <!-- 1: Nossos Valores KK (UL) -->
                 <div class="doc-card">
                     <div class="doc-icon">🌱</div>
                     <h3>Nossos Valores</h3>
                     <ul>
-                        <li><strong>Sustentabilidade:</strong> Incentivo à mobilidade limpa e ecologicamente responsável.</li>
+                        <li><strong>Sustentabilidade:</strong> Incentivo à mobilidade limpa e ecologicamente
+                            responsável.</li>
                         <li><strong>Inovação:</strong> Tecnologia de ponta em quadros e componentes.</li>
                         <li><strong>Comunidade:</strong> Promoção e apoio ativo à cultura sobre duas rodas.</li>
                         <li><strong>Transparência:</strong> Ética e clareza total com nossos clientes.</li>
@@ -278,9 +203,11 @@
                     <h3>Glossário do Ciclista</h3>
                     <dl style="color: #cbd5e1; font-size: 0.85rem; margin: 0;">
                         <dt style="color: #beff11; font-weight: 600; margin-top: 4px;">Tubeless</dt>
-                        <dd style="margin-left: 0; color: #94a3b8; margin-bottom: 8px;">Sistema de pneus sem câmara de ar com líquido selante.</dd>
+                        <dd style="margin-left: 0; color: #94a3b8; margin-bottom: 8px;">Sistema de pneus sem câmara de
+                            ar com líquido selante.</dd>
                         <dt style="color: #beff11; font-weight: 600;">Geometria Aero</dt>
-                        <dd style="margin-left: 0; color: #94a3b8;">Design do quadro projetado para menor resistência do ar.</dd>
+                        <dd style="margin-left: 0; color: #94a3b8;">Design do quadro projetado para menor resistência do
+                            ar.</dd>
                     </dl>
                 </div>
             </div>
@@ -289,13 +216,15 @@
         <!-- 2: WIREFRAMES E DESIGN DESSE TRAMBOLHO  -->
         <section class="doc-section">
             <h2 class="category-title">Estrutura & Wireframes do Projeto</h2>
-            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">Modelagem prévia das páginas desenvolvidas para a plataforma SOFTBYKE.</p>
-            
+            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">Modelagem prévia das páginas
+                desenvolvidas para a plataforma SOFTBYKE.</p>
+
             <div class="wireframe-grid">
                 <!-- 1: Home -->
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
-                        <img src="img/wf-home.png" alt="Wireframe Página Inicial" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="img/wf-home.png" alt="Wireframe Página Inicial"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Página Inicial</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Slider interativo e destaques de lançamentos.</p>
@@ -304,7 +233,8 @@
                 <!-- 2: Catálogo -->
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
-                        <img src="img/wf-produtos.png" alt="Wireframe Catálogo de Produtos" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="img/wf-produtos.png" alt="Wireframe Catálogo de Produtos"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Catálogo de Produtos</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Grade de bicicletas e equipamentos com busca.</p>
@@ -313,7 +243,8 @@
                 <!-- 3: Galeria -->
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
-                        <img src="img/wf-galeria.png" alt="Wireframe Galeria" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="img/wf-galeria.png" alt="Wireframe Galeria"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Galeria de Imagens</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Exibição expandida e detalhes de pintura.</p>
@@ -322,7 +253,8 @@
                 <!-- 4: Documentos -->
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
-                        <img src="img/wf-documentos.png" alt="Wireframe Documentos" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="img/wf-documentos.png" alt="Wireframe Documentos"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Central de Documentos</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Tabela técnica e dados institucionais.</p>
@@ -336,7 +268,7 @@
             <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">
                 Resumo comparativo dos modelos comercializados pela SOFTBYKE.
             </p>
-            
+
             <div class="table-container">
                 <table class="custom-table">
                     <thead>
@@ -351,7 +283,9 @@
                     <tbody>
                         <!-- Linhas 1 a 3 (Grupo 1) -->
                         <tr>
-                            <td rowspan="3" style="background: rgba(190, 255, 17, 0.05); font-weight: bold; color: #beff11;">Urbanas & Elétricas</td>
+                            <td rowspan="3"
+                                style="background: rgba(190, 255, 17, 0.05); font-weight: bold; color: #beff11;">Urbanas
+                                & Elétricas</td>
                             <td>ElectroBike Kross</td>
                             <td>Alumínio Hidroformado 6061</td>
                             <td>Shimano Acera 9v + 250W</td>
@@ -373,14 +307,19 @@
                         <!-- Linha Mesclada de Destaque -->
                         <tr style="background: #0f172a; text-align: center; font-weight: 600;">
                             <td colspan="5" style="color: #beff11;">
-                                <mark style="background: #beff11; color: #000; padding: 2px 8px; border-radius: 3px;">AVISO RELEVANTE:</mark> 
-                                Todos os quadros possuem <strong>garantia vitalícia</strong> contra defeitos de fabricação.
+                                <mark
+                                    style="background: #beff11; color: #000; padding: 2px 8px; border-radius: 3px;">AVISO
+                                    RELEVANTE:</mark>
+                                Todos os quadros possuem <strong>garantia vitalícia</strong> contra defeitos de
+                                fabricação.
                             </td>
                         </tr>
 
                         <!-- Linhas 5 a 8 (Grupo 2) -->
                         <tr>
-                            <td rowspan="4" style="background: rgba(190, 255, 17, 0.03); font-weight: bold; color: #beff11;">Mountain Bike (MTB)</td>
+                            <td rowspan="4"
+                                style="background: rgba(190, 255, 17, 0.03); font-weight: bold; color: #beff11;">
+                                Mountain Bike (MTB)</td>
                             <td>Bintee Mountain Trail</td>
                             <td>Carbono Toray T700</td>
                             <td>SRAM GX Eagle 12v</td>
@@ -408,13 +347,16 @@
                         <!-- Linha Mesclada de Alerta -->
                         <tr style="background: #0f172a; text-align: center;">
                             <td colspan="5" style="color: #cbd5e1; font-size: 0.8rem;">
-                                <em>* Capacidade máxima suportada por modelo: 120kg <sub>(peso do ciclista + carga)</sub>.</em>
+                                <em>* Capacidade máxima suportada por modelo: 120kg <sub>(peso do ciclista +
+                                        carga)</sub>.</em>
                             </td>
                         </tr>
 
                         <!-- Linhas 10 a 12 (Grupo 3) -->
                         <tr>
-                            <td rowspan="3" style="background: rgba(190, 255, 17, 0.05); font-weight: bold; color: #beff11;">Speed & Road</td>
+                            <td rowspan="3"
+                                style="background: rgba(190, 255, 17, 0.05); font-weight: bold; color: #beff11;">Speed &
+                                Road</td>
                             <td>Avanti Galant Pro</td>
                             <td>Liga Leve Aero Triple Butted</td>
                             <td>Shimano 105 22v</td>
@@ -433,9 +375,11 @@
                             <td>R$ 7.400,00</td>
                         </tr>
 
-                        
+
                         <tr>
-                            <td rowspan="3" style="background: rgba(190, 255, 17, 0.03); font-weight: bold; color: #beff11;">Acessórios & Equipamentos</td>
+                            <td rowspan="3"
+                                style="background: rgba(190, 255, 17, 0.03); font-weight: bold; color: #beff11;">
+                                Acessórios & Equipamentos</td>
                             <td>Capacete Aero Protech</td>
                             <td>EPS In-Mold com Tecnologia MIPS</td>
                             <td><small>N/A</small></td>
@@ -461,15 +405,18 @@
         <!-- PORTAIS DE REFERÊNCIA & LINKS -->
         <section class="doc-section">
             <h2 class="category-title">Portais de Referência & Links Úteis</h2>
-            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">Acompanhe as principais federações, tecnologias e portais do universo do ciclismo.</p>
-            
+            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 15px;">Acompanhe as principais federações,
+                tecnologias e portais do universo do ciclismo.</p>
+
             <div class="link-grid">
                 <div class="link-card">
-                    <a href="https://www.uci.org" target="_blank" rel="noopener noreferrer">1. UCI - União Ciclística Internacional ↗</a>
+                    <a href="https://www.uci.org" target="_blank" rel="noopener noreferrer">1. UCI - União Ciclística
+                        Internacional ↗</a>
                     <p>Órgão mundial que regulamenta o esporte no mundo.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://www.cbc.esp.br" target="_blank" rel="noopener noreferrer">2. Confederação Brasileira de Ciclismo ↗</a>
+                    <a href="https://www.cbc.esp.br" target="_blank" rel="noopener noreferrer">2. Confederação
+                        Brasileira de Ciclismo ↗</a>
                     <p>Entidade reguladora das modalidades de ciclismo no Brasil.</p>
                 </div>
                 <div class="link-card">
@@ -477,7 +424,8 @@
                     <p>Rede social global e rastreamento para ciclistas.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://bike.shimano.com" target="_blank" rel="noopener noreferrer">4. Shimano Official ↗</a>
+                    <a href="https://bike.shimano.com" target="_blank" rel="noopener noreferrer">4. Shimano Official
+                        ↗</a>
                     <p>Referência mundial em transmissões e freios ciclisticos.</p>
                 </div>
                 <div class="link-card">
@@ -485,135 +433,54 @@
                     <p>Tecnologia e inovação em componentes de alta performance.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://www.pedal.com.br" target="_blank" rel="noopener noreferrer">6. Portal Pedal.com.br ↗</a>
+                    <a href="https://www.pedal.com.br" target="_blank" rel="noopener noreferrer">6. Portal Pedal.com.br
+                        ↗</a>
                     <p>Maior comunidade, notícias e testes do mercado nacional.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://www.gov.br/transportes" target="_blank" rel="noopener noreferrer">7. SENATRAN / Código de Trânsito ↗</a>
+                    <a href="https://www.gov.br/transportes" target="_blank" rel="noopener noreferrer">7. SENATRAN /
+                        Código de Trânsito ↗</a>
                     <p>Regras de circulação e segurança para ciclistas urbanos.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://worldbicyclerelief.org" target="_blank" rel="noopener noreferrer">8. World Bicycle Relief ↗</a>
+                    <a href="https://worldbicyclerelief.org" target="_blank" rel="noopener noreferrer">8. World Bicycle
+                        Relief ↗</a>
                     <p>Organização internacional voltada para mobilidade social.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://bikemagazine.com.br" target="_blank" rel="noopener noreferrer">9. Bike Magazine Brasil ↗</a>
+                    <a href="https://bikemagazine.com.br" target="_blank" rel="noopener noreferrer">9. Bike Magazine
+                        Brasil ↗</a>
                     <p>Notícias sobre competições, equipamentos e cobertura de eventos.</p>
                 </div>
                 <div class="link-card">
-                    <a href="https://www.gcn.tech" target="_blank" rel="noopener noreferrer">10. Global Cycling Network (GCN) ↗</a>
+                    <a href="https://www.gcn.tech" target="_blank" rel="noopener noreferrer">10. Global Cycling Network
+                        (GCN) ↗</a>
                     <p>Canal internacional com dicas técnicas e manutenção de bikes.</p>
                 </div>
             </div>
         </section>
 
-        <!-- SEÇÃO 5: BRIEFING OFICIAL DO PROJETO (INSERIDO AQUI) -->
-        <section class="doc-section">
-            <h2 class="category-title">Briefing Oficial do Projeto</h2>
-            <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px;">
-                Alinhamento estratégico, diretrizes visuais e especificações de escopo da plataforma SOFTBYKE.
-            </p>
 
-            <div class="briefing-container">
-                
-                <!-- Bloco 1: Visão Geral -->
-                <div class="briefing-card">
-                    <div class="briefing-header">
-                        <span class="briefing-badge">01</span>
-                        <h3>Visão Geral & Ramo de Atuação</h3>
-                    </div>
-                    <div class="briefing-content">
-                        <p><strong>Ramo:</strong> Comércio e distribuição de bicicletas, peças e acessórios voltados para ciclismo urbano, de estrada e Mountain Bike (MTB).</p>
-                        <p><strong>Estrutura:</strong> Sede única com foco na expansão de atendimento e vendas online.</p>
-                        <p><strong>Objetivos:</strong> Estabelecer um portal institucional e catálogo interativo com exibição clara de produtos, preços e equipe técnica.</p>
-                    </div>
-                </div>
 
-                <!-- Bloco 2: Produtos e Público-Alvo -->
-                <div class="briefing-card">
-                    <div class="briefing-header">
-                        <span class="briefing-badge">02</span>
-                        <h3>Produtos & Público-Alvo</h3>
-                    </div>
-                    <div class="briefing-content">
-                        <p><strong>Produtos Oferecidos:</strong> Bicicletas (urbanas e alta performance), componentes (pedais, pneus, selins, discos) e segurança (capacetes, u-locks, faróis).</p>
-                        <p><strong>Público-Alvo:</strong> Ciclistas urbanos, praticantes de MTB, cicloturistas e entusiastas do esporte que buscam equipamentos de alta qualidade.</p>
-                    </div>
-                </div>
-
-                <!-- Bloco 3: Análise de Mercado -->
-                <div class="briefing-card">
-                    <div class="briefing-header">
-                        <span class="briefing-badge">03</span>
-                        <h3>Análise de Mercado & Referências</h3>
-                    </div>
-                    <div class="briefing-content">
-                        <p><strong>Vantagens:</strong> Identidade visual marcante, catálogo diversificado, navegação focada em UX e transparência documental.</p>
-                        <p><strong>Desafios:</strong> Consolidação de autoridade de marca nova no ambiente digital.</p>
-                        <p><strong>Referências:</strong> Plataformas de e-commerce internacional de ciclismo (Specialized, Trek e Canyon).</p>
-                    </div>
-                </div>
-
-                <!-- Bloco 4: Diretrizes Visuais -->
-                <div class="briefing-card">
-                    <div class="briefing-header">
-                        <span class="briefing-badge">04</span>
-                        <h3>Diretrizes Visuais & Tecnologias</h3>
-                    </div>
-                    <div class="briefing-content">
-                        <p><strong>Estética:</strong> Layout Dark Mode (azul marinho profundo e preto), elementos acrílico/blur (backdrop-filter) e detalhes neon (`#beff11` e ciano).</p>
-                        <p><strong>Tipografia:</strong> <em>League Gothic</em> para títulos e <em>Poppins</em> para leitura.</p>
-                        <p><strong>Tecnologias:</strong> HTML5 estruturado e CSS3 avançado (Flexbox, Grid) totalmente responsivo.</p>
-                    </div>
-                </div>
-
-                <!-- Bloco 5: Objeções -->
-                <div class="briefing-card briefing-alert">
-                    <div class="briefing-header">
-                        <span class="briefing-badge alert-badge">05</span>
-                        <h3>Objeções & Regras de Design</h3>
-                    </div>
-                    <div class="briefing-content">
-                        <ul>
-                            <li>Não utilizar layouts claros (light mode) genéricos.</li>
-                            <li>Evitar travamento de rolagem no `body/html` (`overflow: hidden`).</li>
-                            <li>Não deixar títulos ocultos sob o menu fixo.</li>
-                            <li>Garantir padronização no tamanho de todas as imagens de produtos.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Bloco 6: Equipe do Projeto -->
-                <div class="briefing-card">
-                    <div class="briefing-header">
-                        <span class="briefing-badge">06</span>
-                        <h3>Equipe do Projeto</h3>
-                    </div>
-                    <div class="briefing-content team-list">
-                        <p><strong>Emanuelle Christinie R. de Oliveira:</strong> Desenvolvimento & Programação (<em>emanuelle.christinie@sempreceub.com</em>)</p>
-                        <p><strong>Thamires Mendonça:</strong> UI/UX & Design Visual (<em>thamires.mc@sempreceub.com</em>)</p>
-                        <p><strong>Julia Marques:</strong> Pesquisa & Planejamento de Conteúdo (<em>jumneves@sempreceub.com</em>)</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- SEÇÃO 6: NOSSOS PATROCINADORES -->
+        <!-- SEÇÃO 5: NOSSOS PATROCINADORES -->
         <section class="doc-section">
             <h2 class="category-title">Nossos Patrocinadores</h2>
             <div class="sponsors-grid-docs">
                 <div class="sponsor-doc-card">
-                    <img src="img/patrocinador1.png" alt="Patrocinador 1" onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+1'">
+                    <img src="img/patrocinador1.png" alt="Patrocinador 1"
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+1'">
                 </div>
                 <div class="sponsor-doc-card">
-                    <img src="img/patrocinador2.png" alt="Patrocinador 2" onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+2'">
+                    <img src="img/patrocinador2.png" alt="Patrocinador 2"
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+2'">
                 </div>
                 <div class="sponsor-doc-card">
-                    <img src="img/patrocinador3.png" alt="Patrocinador 3" onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+3'">
+                    <img src="img/patrocinador3.png" alt="Patrocinador 3"
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+3'">
                 </div>
                 <div class="sponsor-doc-card">
-                    <img src="img/patrocinador4.png" alt="Patrocinador 4" onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+4'">
+                    <img src="img/patrocinador4.png" alt="Patrocinador 4"
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/130x60/0d1b2a/00d4ff?text=PATROCINADOR+4'">
                 </div>
             </div>
         </section>
@@ -621,11 +488,11 @@
     </main>
 
     <!-- RODAPÉ COMPLETO -->
-    <footer class="main-footer">
+    <footer class="main-footer">7
         <div class="footer-container">
-            <div class="footer-brand">
-                <img src="img/logo.png" alt="SOFTBYKE Logo" class="footer-logo">
-                <p>Movimentando vidas e construindo o futuro da mobilidade sustentável.</p>
+            <div class="footer-logo-row">
+                <img src="img/logo.png" alt="SOFTBYKE" class="footer-logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
             </div>
 
             <div class="footer-contacts">
@@ -633,30 +500,43 @@
                 <div class="contact-list">
                     <a href="https://instagram.com/SoftBike_" target="_blank" class="contact-item">
                         <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
                         </div>
                         <span>@SoftBike_</span>
                     </a>
 
                     <a href="mailto:Softbike-Brasilmovimento@gmail.com" class="contact-item">
                         <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
                         </div>
                         <span>Softbike-Brasilmovimento@gmail.com</span>
                     </a>
 
                     <a href="tel:61999999999" class="contact-item">
                         <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
                         </div>
                         <span>(61) 99999-9999</span>
                     </a>
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>&copy; 2026 SOFTBYKE — Ciência da Computação (Turma A) | Integrantes: Emanuelle Christinie • Thamires Mendonça • Júlia Marques</p>
+            <p>&copy; 2026 SOFTBYKE — Ciência da Computação (Turma A) | Integrantes: Emanuelle Christinie • Thamires
+                Mendonça • Júlia Marques</p>
         </div>
     </footer>
 
@@ -667,12 +547,12 @@
         const drawerClose = document.getElementById('drawerClose');
         const drawerOverlay = document.getElementById('drawerOverlay');
 
-        if(menuToggle) {
+        if (menuToggle) {
             menuToggle.addEventListener('click', () => {
                 sideDrawer.classList.add('open');
                 drawerOverlay.classList.add('active');
             });
-            
+
             const closeDrawer = () => {
                 sideDrawer.classList.remove('open');
                 drawerOverlay.classList.remove('active');
@@ -684,4 +564,5 @@
     </script>
     <script src="scripts.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOFTBYKE - Galeria</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Header Fixo -->
@@ -14,17 +18,18 @@
         <div class="header-left">
             <button class="menu-toggle" id="menuToggle">☰</button>
             <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="SOFTBYKE Logo">
+                <span class="logo-text">SOFT <em>BIKE</em></span>
             </a>
         </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="bicicletas.html">Bicicletas</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
         <div class="search-box">
@@ -44,7 +49,7 @@
 
     <!-- Conteúdo Principal da Galeria -->
     <main class="page-container">
-        
+
         <h1 class="page-title">Galeria & Inspiração</h1>
         <p class="page-subtitle">A Liberdade de Pedalar — Registro visual de momentos únicos na estrada e na cidade.</p>
 
@@ -117,7 +122,7 @@
         <!-- SEÇÃO 3: Carrossel Interativo + Benefícios do Ciclismo -->
         <section class="gallery-section">
             <h2 class="category-title">Momentos em Movimento</h2>
-            
+
             <!-- Carrossel -->
             <div class="carousel-container">
                 <button class="carousel-btn prev-btn" id="galleryPrev">‹</button>
@@ -141,10 +146,15 @@
             <div class="cycling-benefits-box">
                 <h3>Por que adotar o ciclismo no seu dia a dia?</h3>
                 <p>
-                    Mais do que um meio de transporte ou uma atividade física, andar de bicicleta é um estilo de vida que transforma corpo e mente. Fortalece a saúde cardiovascular, desenvolve a musculatura das pernas e do core, e melhora significativamente a capacidade respiratória.
+                    Mais do que um meio de transporte ou uma atividade física, andar de bicicleta é um estilo de vida
+                    que transforma corpo e mente. Fortalece a saúde cardiovascular, desenvolve a musculatura das pernas
+                    e do core, e melhora significativamente a capacidade respiratória.
                 </p>
                 <p>
-                    Além dos impactos físicos, o ciclismo proporciona um alívio mental único. O contato com a natureza e o ar livre estimula a liberação de endorfina, reduzindo os níveis de estresse e ansiedade. Seja enfrentando o trânsito urbano com agilidade e zero emissão de poluentes, seja explorando novas trilhas nos finais de semana, a bicicleta oferece a liberdade que a rotina moderna exige.
+                    Além dos impactos físicos, o ciclismo proporciona um alívio mental único. O contato com a natureza e
+                    o ar livre estimula a liberação de endorfina, reduzindo os níveis de estresse e ansiedade. Seja
+                    enfrentando o trânsito urbano com agilidade e zero emissão de poluentes, seja explorando novas
+                    trilhas nos finais de semana, a bicicleta oferece a liberdade que a rotina moderna exige.
                 </p>
             </div>
         </section>
@@ -159,12 +169,12 @@
         const drawerClose = document.getElementById('drawerClose');
         const drawerOverlay = document.getElementById('drawerOverlay');
 
-        if(menuToggle) {
+        if (menuToggle) {
             menuToggle.addEventListener('click', () => {
                 sideDrawer.classList.add('open');
                 drawerOverlay.classList.add('active');
             });
-            
+
             const closeDrawer = () => {
                 sideDrawer.classList.remove('open');
                 drawerOverlay.classList.remove('active');
@@ -179,7 +189,7 @@
         const prevBtn = document.getElementById('galleryPrev');
         const nextBtn = document.getElementById('galleryNext');
 
-        if(track && prevBtn && nextBtn) {
+        if (track && prevBtn && nextBtn) {
             let index = 0;
             const getVisibleSlides = () => window.innerWidth < 768 ? 1 : 3;
 
@@ -215,4 +225,5 @@
     </script>
 
 </body>
+
 </html>
