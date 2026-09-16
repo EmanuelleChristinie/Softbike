@@ -369,7 +369,7 @@ nav.main-nav ul li a.active {
 
 /* Estrutura das Páginas Internas */
 .page-container {
-    padding-top: 150px;
+    padding-top: 100px !important;
     padding-bottom: 60px;
     max-width: 1200px;
     margin: 0 auto;
@@ -849,11 +849,10 @@ nav.main-nav ul li a.active {
 }
 
 /* Rodapé Digital */
-.main-footer {
-    background: #020412;
-    border-top: 1px solid rgba(0, 212, 255, 0.2);
-    padding: 50px 20px 20px;
-    margin-top: 60px;
+.main-footer .footer-logo {
+    height: 40px; 
+    width: auto;   
+    object-fit: contain;
 }
 
 .footer-container {
@@ -977,7 +976,7 @@ nav.main-nav ul li a.active {
     color: #a8b2d1;
     font-size: 0.9rem;
 }
- 
+
 .categoria-sumario a {
     color: #ffffff;
     text-decoration: none;
@@ -988,16 +987,16 @@ nav.main-nav ul li a.active {
     background: rgba(13, 27, 42, 0.6);
     transition: 0.25s;
 }
- 
+
 .categoria-sumario a:hover,
 .categoria-sumario a:focus-visible {
     color: #03071e;
     background: #beff11;
     border-color: #beff11;
 }
- 
+
 .product-card { cursor: pointer; }
- 
+
 /* ==========================================================================
    MODAL DE PRODUTO
    ========================================================================== */
@@ -1015,12 +1014,12 @@ nav.main-nav ul li a.active {
     visibility: hidden;
     transition: opacity 0.25s ease, visibility 0.25s ease;
 }
- 
+
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
 }
- 
+
 .modal-content {
     background-color: #0b1329;
     border: 1px solid rgba(0, 212, 255, 0.25);
@@ -1036,9 +1035,9 @@ nav.main-nav ul li a.active {
     transform: translateY(12px);
     transition: transform 0.25s ease;
 }
- 
+
 .modal-overlay.active .modal-content { transform: translateY(0); }
- 
+
 .modal-close {
     position: absolute;
     top: 12px;
@@ -1051,9 +1050,9 @@ nav.main-nav ul li a.active {
     cursor: pointer;
     transition: color 0.2s;
 }
- 
+
 .modal-close:hover { color: #beff11; }
- 
+
 /* Layout de 3 colunas: galeria | informações | compra */
 .modal-body {
     display: grid;
@@ -1061,7 +1060,7 @@ nav.main-nav ul li a.active {
     gap: 28px;
     align-items: start;
 }
- 
+
 /* --------- COLUNA 1: GALERIA --------- */
 .modal-gallery {
     display: grid;
@@ -1069,13 +1068,13 @@ nav.main-nav ul li a.active {
     gap: 14px;
     align-items: start;
 }
- 
+
 .thumb-strip {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
- 
+
 .thumb {
     width: 56px;
     height: 56px;
@@ -1086,16 +1085,16 @@ nav.main-nav ul li a.active {
     cursor: pointer;
     transition: border-color 0.2s;
 }
- 
+
 .thumb img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
- 
+
 .thumb:hover { border-color: #00d4ff; }
 .thumb.is-active { border-color: #beff11; box-shadow: 0 0 10px rgba(190, 255, 17, 0.35); }
- 
+
 .main-img-container {
     background: #ffffff;
     border-radius: 12px;
@@ -1106,23 +1105,23 @@ nav.main-nav ul li a.active {
     justify-content: center;
     overflow: hidden;
 }
- 
+
 .main-img-container img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.4s ease;
 }
- 
+
 .main-img-container:hover img { transform: scale(1.12); }
- 
+
 /* --------- COLUNA 2: INFORMAÇÕES --------- */
 .modal-meta {
     font-size: 0.8rem;
     color: #94a3b8;
     margin-bottom: 8px;
 }
- 
+
 .badge-highlight {
     display: inline-block;
     background: #beff11;
@@ -1134,14 +1133,14 @@ nav.main-nav ul li a.active {
     border-radius: 4px;
     margin-bottom: 10px;
 }
- 
+
 .modal-info h2 {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.25;
     margin-bottom: 10px;
 }
- 
+
 .modal-rating {
     display: flex;
     align-items: center;
@@ -1150,10 +1149,10 @@ nav.main-nav ul li a.active {
     color: #94a3b8;
     margin-bottom: 18px;
 }
- 
+
 .modal-rating .rating-value { color: #f8fafc; }
 .modal-rating .stars { color: #00d4ff; letter-spacing: 2px; }
- 
+
 .modal-price-box {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -1161,27 +1160,27 @@ nav.main-nav ul li a.active {
     border-radius: 10px;
     margin-bottom: 18px;
 }
- 
+
 .old-price {
     text-decoration: line-through;
     color: #64748b;
     font-size: 0.85rem;
 }
- 
+
 .current-price-row {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 4px 0 6px;
 }
- 
+
 .price-value {
     font-size: 2.1rem;
     font-weight: 700;
     color: #beff11;
     line-height: 1;
 }
- 
+
 .price-discount {
     background: rgba(190, 255, 17, 0.15);
     color: #beff11;
@@ -1190,41 +1189,41 @@ nav.main-nav ul li a.active {
     padding: 3px 7px;
     border-radius: 4px;
 }
- 
+
 .payment-terms {
     display: block;
     font-size: 0.85rem;
     color: #cbd5e1;
     margin-bottom: 6px;
 }
- 
+
 .payment-link {
     font-size: 0.82rem;
     color: #00d4ff;
     text-decoration: none;
 }
- 
+
 .payment-link:hover { text-decoration: underline; }
- 
+
 .modal-description {
     font-size: 0.9rem;
     color: #cbd5e1;
     line-height: 1.6;
     margin-bottom: 18px;
 }
- 
+
 .modal-variant { margin-bottom: 20px; }
- 
+
 .variant-label {
     font-size: 0.85rem;
     color: #94a3b8;
     margin-bottom: 8px;
 }
- 
+
 .variant-label strong { color: #f8fafc; }
- 
+
 .variant-options { display: flex; gap: 8px; }
- 
+
 .variant-chip {
     background: transparent;
     border: 1px solid #334155;
@@ -1235,10 +1234,10 @@ nav.main-nav ul li a.active {
     cursor: pointer;
     transition: 0.2s;
 }
- 
+
 .variant-chip:hover { border-color: #00d4ff; }
 .variant-chip.is-selected { border-color: #beff11; color: #beff11; }
- 
+
 .modal-specs {
     display: flex;
     flex-direction: column;
@@ -1247,16 +1246,16 @@ nav.main-nav ul li a.active {
     border-top: 1px solid rgba(255, 255, 255, 0.07);
     padding-top: 16px;
 }
- 
+
 .modal-specs li {
     display: flex;
     justify-content: space-between;
     gap: 12px;
 }
- 
+
 .modal-specs span { color: #94a3b8; }
 .modal-specs strong { color: #f8fafc; font-weight: 500; }
- 
+
 /* --------- COLUNA 3: CAIXA DE COMPRA --------- */
 .modal-purchase-box {
     border: 1px solid rgba(0, 212, 255, 0.25);
@@ -1266,31 +1265,31 @@ nav.main-nav ul li a.active {
     position: sticky;
     top: 0;
 }
- 
+
 .delivery-date {
     font-size: 0.9rem;
     color: #cbd5e1;
     margin-bottom: 4px;
 }
- 
+
 .delivery-date strong { color: #beff11; }
- 
+
 .stock-status {
     font-size: 1rem;
     font-weight: 600;
     color: #f8fafc;
     margin: 18px 0 14px;
 }
- 
+
 .quantity-selector { margin-bottom: 18px; }
- 
+
 .quantity-selector label {
     display: block;
     font-size: 0.85rem;
     color: #94a3b8;
     margin-bottom: 8px;
 }
- 
+
 .qty-control {
     display: inline-flex;
     align-items: center;
@@ -1300,7 +1299,7 @@ nav.main-nav ul li a.active {
     padding: 5px 12px;
     vertical-align: middle;
 }
- 
+
 .qty-control button {
     background: transparent;
     border: none;
@@ -1309,16 +1308,16 @@ nav.main-nav ul li a.active {
     cursor: pointer;
     line-height: 1;
 }
- 
+
 .qty-control button:hover { color: #beff11; }
 .qty-control span { min-width: 16px; text-align: center; }
- 
+
 .qty-hint {
     font-size: 0.78rem;
     color: #64748b;
     margin-left: 10px;
 }
- 
+
 .btn-buy-now,
 .btn-add-cart {
     width: 100%;
@@ -1331,18 +1330,18 @@ nav.main-nav ul li a.active {
     margin-bottom: 10px;
     transition: transform 0.2s, opacity 0.2s;
 }
- 
+
 .btn-buy-now { background-color: #beff11; color: #03071e; }
- 
+
 .btn-add-cart {
     background-color: rgba(0, 212, 255, 0.12);
     color: #00d4ff;
     border: 1px solid rgba(0, 212, 255, 0.4);
 }
- 
+
 .btn-buy-now:hover,
 .btn-add-cart:hover { opacity: 0.9; transform: translateY(-2px); }
- 
+
 .seller-box {
     border-top: 1px solid rgba(255, 255, 255, 0.07);
     margin-top: 16px;
@@ -1350,10 +1349,10 @@ nav.main-nav ul li a.active {
     font-size: 0.85rem;
     color: #cbd5e1;
 }
- 
+
 .seller-box strong { color: #f8fafc; }
 .seller-sales { color: #64748b; font-size: 0.78rem; }
- 
+
 .modal-benefits {
     display: flex;
     flex-direction: column;
@@ -1363,30 +1362,30 @@ nav.main-nav ul li a.active {
     color: #94a3b8;
     line-height: 1.5;
 }
- 
+
 .modal-benefits li { display: flex; gap: 10px; }
 .modal-benefits strong { color: #00d4ff; font-weight: 600; }
- 
+
 /* --------- FOCO VISÍVEL E MOVIMENTO REDUZIDO --------- */
 .modal-content :focus-visible,
 .categoria-sumario a:focus-visible {
     outline: 2px solid #beff11;
     outline-offset: 2px;
 }
- 
+
 @media (prefers-reduced-motion: reduce) {
     .modal-content,
     .main-img-container img,
     .btn-buy-now,
     .btn-add-cart { transition: none; }
 }
- 
+
 /* --------- RESPONSIVO --------- */
 @media (max-width: 1024px) {
     .modal-body { grid-template-columns: 1fr 1fr; }
     .modal-purchase-box { grid-column: 1 / -1; position: static; }
 }
- 
+
 @media (max-width: 720px) {
     .modal-content { padding: 22px 16px; max-height: 94vh; }
     .modal-body { grid-template-columns: 1fr; gap: 22px; }
@@ -1396,7 +1395,7 @@ nav.main-nav ul li a.active {
     .modal-info h2 { font-size: 1.3rem; }
     .price-value { font-size: 1.7rem; }
 }
- 
+
 /* ==========================================================================
    BOTÃO VOLTAR AO TOPO
    ========================================================================== */
@@ -1417,7 +1416,7 @@ nav.main-nav ul li a.active {
     transition: opacity 0.3s, visibility 0.3s;
     z-index: 1000;
 }
- 
+
 #btn-back-to-top.show { opacity: 1; visibility: visible; }
 
 
@@ -1547,118 +1546,6 @@ header .logo {
     border-radius: 12px;
     background: #0b1329;
     border: 1px solid rgba(0, 212, 255, 0.3);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
-    z-index: 300;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
-}
-
-.cart-panel.aberto {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.cart-panel h4 {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #00d4ff;
-    margin-bottom: 14px;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    font-size: 0.85rem;
-}
-
-.cart-item-nome { color: #f8fafc; line-height: 1.35; }
-.cart-item-qtd  { color: #64748b; font-size: 0.78rem; }
-.cart-item-preco { color: #beff11; font-weight: 600; white-space: nowrap; }
-
-.cart-remover {
-    background: none;
-    border: none;
-    color: #64748b;
-    cursor: pointer;
-    font-size: 1rem;
-    line-height: 1;
-    padding: 0 2px;
-}
-
-.cart-remover:hover { color: #ff4757; }
-
-.cart-total {
-    display: flex;
-    justify-content: space-between;
-    margin: 14px 0;
-    font-size: 0.95rem;
-    color: #f8fafc;
-}
-
-.cart-total strong { color: #beff11; }
-
-.cart-vazio {
-    color: #94a3b8;
-    font-size: 0.85rem;
-    line-height: 1.5;
-}
-
-.cart-acoes { display: flex; gap: 8px; }
-
-.cart-acoes button {
-    flex: 1;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 0.82rem;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-}
-
-.btn-finalizar { background: #beff11; color: #03071e; }
-
-.btn-limpar {
-    background: transparent;
-    border: 1px solid #334155;
-    color: #94a3b8;
-}
-
-.btn-limpar:hover { border-color: #ff4757; color: #ff4757; }
-
-/* --------------------------------------------------------------------------
-   6. Rodapé com a marca escrita
-   -------------------------------------------------------------------------- */
-.footer-logo-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.footer-logo-row .footer-logo { height: 40px; margin-bottom: 0; }
-.footer-logo-row .logo-text { font-size: 1.5rem; }
-
-/* --------------------------------------------------------------------------
-   7. Telas menores
-   -------------------------------------------------------------------------- */
-@media (max-width: 1100px) {
-    header { padding: 12px 20px; }
-    .search-box { display: none; }
-}
-
-@media (max-width: 860px) {
-    header { grid-template-columns: auto 1fr; }
-    header nav.main-nav { display: none; }
-    .header-right { justify-self: end; }
-    .logo-text { font-size: 1.4rem; }
-    .cart-panel { right: 12px; width: calc(100vw - 24px); max-width: 330px; }
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
