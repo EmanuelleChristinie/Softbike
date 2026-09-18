@@ -892,6 +892,22 @@ nav.main-nav ul li a.active {
     margin-bottom: 20px;
 }
 
+.footer-logo-stacked {
+    display: inline-block;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3.2rem;
+    line-height: 0.85;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-logo-stacked em {
+    font-style: normal;
+    color: #beff11;
+}
+
 .contact-list {
     display: flex;
     flex-direction: column;
@@ -1367,7 +1383,7 @@ nav.main-nav ul li a.active {
 .modal-benefits li { display: flex; gap: 10px; }
 .modal-benefits strong { color: #00d4ff; font-weight: 600; }
  
-/* --------- FOCO VISÍVEL E MOVIMENTO REDUZIDO --------- */
+/* --------- FOCO VISÍVEL --------- */
 .modal-content :focus-visible,
 .categoria-sumario a:focus-visible {
     outline: 2px solid #beff11;
@@ -1427,7 +1443,7 @@ nav.main-nav ul li a.active {
 
 /* --------------------------------------------------------------------------
    1. Header em 3 colunas: o menu fica sempre no centro exato da tela,
-   independente do que existe à esquerda ou à direita.
+   falta ajusta emanuelleeee
    -------------------------------------------------------------------------- */
 header {
     display: grid;

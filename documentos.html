@@ -139,7 +139,6 @@
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="empresa.html">Empresa</a></li>
                 <li><a href="documentos.html" class="active">Documentos</a></li>
-                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
         <div class="search-box">
@@ -161,8 +160,7 @@
     </div>
     <div class="drawer-overlay" id="drawerOverlay"></div>
 
-    <!-- Conteúdo Principal -->
-    <main class="page-container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+    <main class="page-container">
 
         <h1 class="page-title">Documentos & Transparência</h1>
         <p class="page-subtitle">Diretrizes institucionais, especificações de produtos e referências do projeto.</p>
@@ -224,7 +222,7 @@
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
                         <img src="img/wf-home.png" alt="Wireframe Página Inicial"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                            style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Página Inicial</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Slider interativo e destaques de lançamentos.</p>
@@ -234,7 +232,7 @@
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
                         <img src="img/wf-produtos.png" alt="Wireframe Catálogo de Produtos"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                            style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Catálogo de Produtos</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Grade de bicicletas e equipamentos com busca.</p>
@@ -244,7 +242,7 @@
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
                         <img src="img/wf-galeria.png" alt="Wireframe Galeria"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                            style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Galeria de Imagens</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Exibição expandida e detalhes de pintura.</p>
@@ -254,7 +252,7 @@
                 <div class="wireframe-card">
                     <div class="wireframe-preview" style="padding: 0; border: 1px solid #beff11;">
                         <img src="img/wf-documentos.png" alt="Wireframe Documentos"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                            style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h4 style="color: #f8fafc; margin-top: 6px; font-size: 0.95rem;">Central de Documentos</h4>
                     <p style="color: #94a3b8; font-size: 0.8rem;">Tabela técnica e dados institucionais.</p>
@@ -486,60 +484,6 @@
         </section>
 
     </main>
-
-    <!-- RODAPÉ COMPLETO -->
-    <footer class="main-footer">7
-        <div class="footer-container">
-            <div class="footer-logo-row">
-                <img src="img/logo.png" alt="SOFTBYKE" class="footer-logo">
-                <span class="logo-text">SOFT <em>BIKE</em></span>
-            </div>
-
-            <div class="footer-contacts">
-                <h4>Canais de Atendimento</h4>
-                <div class="contact-list">
-                    <a href="https://instagram.com/SoftBike_" target="_blank" class="contact-item">
-                        <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </div>
-                        <span>@SoftBike_</span>
-                    </a>
-
-                    <a href="mailto:Softbike-Brasilmovimento@gmail.com" class="contact-item">
-                        <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <span>Softbike-Brasilmovimento@gmail.com</span>
-                    </a>
-
-                    <a href="tel:61999999999" class="contact-item">
-                        <div class="icon-digital">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg>
-                        </div>
-                        <span>(61) 99999-9999</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 SOFTBYKE — Ciência da Computação (Turma A) | Integrantes: Emanuelle Christinie • Thamires
-                Mendonça • Júlia Marques</p>
-        </div>
-    </footer>
-
     <!-- Scripts -->
     <script>
         const menuToggle = document.getElementById('menuToggle');
@@ -563,6 +507,56 @@
         }
     </script>
     <script src="scripts.js"></script>
+
+        <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <span class="footer-logo-stacked">SOFT<br><em>BIKE</em></span>
+            <p>Movimentando vidas e construindo o futuro da mobilidade sustentável.</p>
+        </div>
+
+        <div class="footer-contacts">
+            <h4>Canais de Atendimento</h4>
+            <div class="contact-list">
+                <a href="https://instagram.com/SoftBike_" target="_blank" class="contact-item">
+                    <div class="icon-digital">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <span>@SoftBike_</span>
+                </a>
+
+                <a href="mailto:Softbike-Brasilmovimento@gmail.com" class="contact-item">
+                    <div class="icon-digital">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <span>Softbike-Brasilmovimento@gmail.com</span>
+                </a>
+
+                <a href="tel:61999999999" class="contact-item">
+                    <div class="icon-digital">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <span>(61) 99999-9999</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p style="color:#f8fafc; margin-bottom:6px;"><strong>Curso:</strong> Ciência da Computação | <strong>Disciplina:</strong> Desenvolvimento Web | <strong>Turma:</strong> A</p>
+        <p style="color:#beff11;"><strong>Integrantes:</strong> Emanuelle Christinie • Thamires Mendonça • Júlia Marques</p>
+    </div>
+</footer>
+
 </body>
 
 </html>

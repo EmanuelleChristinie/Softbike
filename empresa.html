@@ -413,7 +413,6 @@
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="empresa.html" class="active">Empresa</a></li>
                 <li><a href="documentos.html">Documentos</a></li>
-                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
     </header>
@@ -587,11 +586,35 @@
         </div>
     </section>
 
+    <!-- Script de Controle do Drawer -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sideDrawer = document.getElementById('sideDrawer');
+        const drawerClose = document.getElementById('drawerClose');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                sideDrawer.classList.add('open');
+                drawerOverlay.classList.add('active');
+            });
+
+            const closeDrawer = () => {
+                sideDrawer.classList.remove('open');
+                drawerOverlay.classList.remove('active');
+            };
+
+            drawerClose.addEventListener('click', closeDrawer);
+            drawerOverlay.addEventListener('click', closeDrawer);
+        }
+    </script>
+    <script src="scripts.js"></script>
+
     <!-- Rodapé Completo -->
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <img src="img/logo.png" alt="SOFTBYKE Logo">
+                <span class="footer-logo-stacked">SOFT<br><em>BIKE</em></span>
                 <p>Movimentando vidas e construindo o futuro da mobilidade sustentável.</p>
             </div>
 
@@ -635,35 +658,12 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 SOFTBYKE — Ciência da Computação (Turma A) | Integrantes: Emanuelle Christinie • Thamires
-                Mendonça • Júlia Marques</p>
+            <p style="color:#f8fafc; margin-bottom:6px;"><strong>Curso:</strong> Ciência da Computação |
+                <strong>Disciplina:</strong> Desenvolvimento Web | <strong>Turma:</strong> A</p>
+            <p style="color:#beff11;"><strong>Integrantes:</strong> Emanuelle Christinie • Thamires Mendonça • Júlia
+                Marques</p>
         </div>
     </footer>
-
-    <!-- Script de Controle do Drawer -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const sideDrawer = document.getElementById('sideDrawer');
-        const drawerClose = document.getElementById('drawerClose');
-        const drawerOverlay = document.getElementById('drawerOverlay');
-
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                sideDrawer.classList.add('open');
-                drawerOverlay.classList.add('active');
-            });
-
-            const closeDrawer = () => {
-                sideDrawer.classList.remove('open');
-                drawerOverlay.classList.remove('active');
-            };
-
-            drawerClose.addEventListener('click', closeDrawer);
-            drawerOverlay.addEventListener('click', closeDrawer);
-        }
-    </script>
-    <script src="scripts.js"></script>
-
 </body>
 
 </html>
